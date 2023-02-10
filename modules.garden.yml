@@ -1,0 +1,22 @@
+kind: Module
+type: container
+name: fastapi-time
+dockerfile: Dockerfile
+build:
+  targetImage: production
+services:
+  - name: frontend
+    devMode:
+      command: [uvicorn, app.main:app]
+      sync:
+        - source: app/
+          target: /project/app/
+          mode: one-way-replica
+    ports: 
+      - name: http
+        containerPort: 8000
+    ingresses:
+      - port: http
+tests:
+  - name: unit
+    args: [pytest, app]

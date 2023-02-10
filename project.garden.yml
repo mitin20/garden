@@ -1,0 +1,9 @@
+kind: Project
+name: fastapi-time
+providers:
+  - name: local-kubernetes
+    context: minikube
+    setupIngressController: nginx
+    deploymentRegistry:
+      hostname: "docker.io"
+      namespace: "worldofgeese"

@@ -1,0 +1,46 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile",
+        "target": "devcontainer",
+        "cacheFrom": "docker.io/worldofgeese/garden-devcontainer-python:0.12.51-buster"
+    },
+    "features": {
+        // Add Docker-in-Docker support.
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "moby": "false"
+        },
+        // Add Kubernetes support.
+        "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
+        // Add Python support.
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.11"
+        },
+        // Add common utilities and name non-root user.
+        "ghcr.io/devcontainers/features/common-utils:2": {}
+    },
+    "remoteEnv": {
+        // Add local Python packages compatible installed with PDM in PEP 582
+        // mode to search path.
+        "PATH": "${containerEnv:PATH}:/${containerWorkspaceFolder}/__pypackages__/3.11/bin",
+        "PYTHONPATH": "${containerEnv:PYTHONPATH}:/${containerWorkspaceFolder}/__pypackages__/3.11/lib"
+    },
+    // Configure tool-specific properties.
+    "customizations": {
+        // These settings only apply to VS Code.
+        "vscode": {
+            // Add extensions to VS Code.
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ]
+        }
+    },
+    // We delete the default `config.json` file created by Docker-in-Docker to
+    // work around this bug:
+    // https://github.com/devcontainers/features/issues/376. We also configure
+    // Git to work around `Error message: fatal: detected dubious ownership in repository`
+    "postCreateCommand": "pipx install pdm; pdm install; rm /home/node/.docker/config.json; git config --global --add safe.directory /garden/static",
+    // Launch our Dev Container as our non-root user inherited from Garden's
+    // base image.
+    "remoteUser": "node"
+}
