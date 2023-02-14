@@ -5,7 +5,8 @@
         "cacheFrom": "docker.io/worldofgeese/garden-devcontainer-python:0.12.51-buster"
     },
     "features": {
-        // Add Docker-in-Docker support.
+        // Add Docker-in-Docker support. A Debian base requires the proprietary
+        // Docker engine.
         "ghcr.io/devcontainers/features/docker-in-docker:2": {
             "moby": "false"
         },
