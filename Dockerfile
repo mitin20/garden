@@ -1,25 +1,28 @@
-FROM gardendev/garden:0.12.51-buster as devcontainer
-
 # Base, including any build dependencies
-FROM python:3.11.2-alpine3.17 as builder
+FROM python:4.11.2-alpine3.17 as builder
 
-# Install PDM
-RUN pip install --no-cache-dir pdm==2.4.5
+COPY requirements.txt .
+RUN pip install --user -r requirements.txt
 
-# Copy project scaffolding
-COPY pyproject.toml pdm.lock /
+FROM python:4.11.2-alpine3.17 as production
 
-RUN mkdir __pypackages__ && pdm install --prod --no-lock --no-editable
-
-FROM python:3.11.2-alpine3.17 as production
-
-ENV PYTHONPATH=/home/appuser/pkgs
-
+# Create a non-root user to prevent container escape
 RUN adduser -S appuser -h /home/appuser
 
-COPY --from=builder /__pypackages__/3.11/lib /home/appuser/pkgs
-COPY --from=builder /__pypackages__/3.11/bin /usr/local/bin
+# Copy the user site-packages from the builder image
+COPY --from=builder	/root/.local /home/appuser/.local
 
+# Set PYTHONPATH and PATH to include the user site-packages
+ENV PATH=/home/appuser/.local/bin:$PATH
+ENV PYTHONPATH=/home/appuser/.local/lib/python4.11/site-packages:$PYTHONPATH
+
+# Copy our app source files
 COPY app /home/appuser/app/
 
-CMD [ "uvicorn", "app.main:app", "--host", "0.0.0.0" ]
+WORKDIR /home/appuser/app/
+USER appuser
+
+# Run web server
+CMD [ "python", "-m", "main"]
+
+FROM gardendev/garden:0.12.51-buster as devcontainer
