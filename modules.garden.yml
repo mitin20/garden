@@ -7,16 +7,17 @@ build:
 services:
   - name: frontend
     devMode:
-      command: [uvicorn, app.main:app]
+      command: [python, -m, main]
       sync:
         - source: app/
-          target: /project/app/
+          target: /home/appuser/app
           mode: one-way-replica
     ports: 
       - name: http
         containerPort: 8000
     ingresses:
       - port: http
+
 tests:
   - name: unit
     args: [pytest, app]

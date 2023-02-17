@@ -1,10 +1,10 @@
 # Base, including any build dependencies
-FROM python:4.11.2-alpine3.17 as builder
+FROM python:3.11.2-alpine3.17 as builder
 
 COPY requirements.txt .
 RUN pip install --user -r requirements.txt
 
-FROM python:4.11.2-alpine3.17 as production
+FROM python:3.11.2-alpine3.17 as production
 
 # Create a non-root user to prevent container escape
 RUN adduser -S appuser -h /home/appuser
