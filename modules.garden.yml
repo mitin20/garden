@@ -1,23 +1,43 @@
 kind: Module
 type: container
-name: fastapi-time
+name: api
 dockerfile: Dockerfile
 build:
   targetImage: production
+tests:
+  - name: unit
+    args: [pytest, app]
 services:
-  - name: frontend
+  - name: api
     devMode:
       command: [python, -m, main]
       sync:
         - source: app/
           target: /home/appuser/app
           mode: one-way-replica
-    ports: 
+    ports:
       - name: http
         containerPort: 8000
+        nodePort: 30000
     ingresses:
       - port: http
+        linkUrl: http://localhost:30000
 
-tests:
-  - name: unit
-    args: [pytest, app]
+---
+
+kind: Module
+type: container
+# Exclude all files and use declared Docker image
+exclude: 
+  - '*'
+image: paulbouwer/hello-kubernetes:1.10
+name: hello-world
+services:
+  - name: hello-world
+    ports:
+      - name: http
+        containerPort: 8080
+        nodePort: 30080
+    ingresses:
+      - port: http
+        linkUrl: http://localhost:30080
