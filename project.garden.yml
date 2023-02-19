@@ -1,9 +1,10 @@
 kind: Project
-name: fastapi-time
+name: api
 providers:
   - name: local-kubernetes
-    context: minikube
-    setupIngressController: nginx
+    context: k3d-k3s-default
+    # Disable ingress controller for Codespaces
+    setupIngressController: null
     deploymentRegistry:
       hostname: "docker.io"
       namespace: "worldofgeese"
