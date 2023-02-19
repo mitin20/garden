@@ -1,8 +1,6 @@
 [tool.pdm]
 
 [project]
-name = "fastapi-time"
-version = "0.1.0"
 description = "A simple FastAPI app that returns the current time."
 authors = [
     {name = "Tao Hansen", email = "59834693+worldofgeese@users.noreply.github.com"},
