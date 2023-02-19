@@ -18,7 +18,7 @@
         },
         // Add common utilities and name non-root user.
         "ghcr.io/devcontainers/features/common-utils:2": {
-            "configureZshAsDefaultShell": true,
+            "configureZshAsDefaultShell": true
         }
     },
 
@@ -39,7 +39,8 @@
             // Add extensions to VS Code.
             "extensions": [
                 "ms-python.python",
-                "ms-python.vscode-pylance"
+                "ms-python.vscode-pylance",
+                "ms-kubernetes-tools.vscode-kubernetes-tools"
             ]
         }
     },
