@@ -5,23 +5,24 @@
         "cacheFrom": "docker.io/worldofgeese/garden-devcontainer-python:0.12.51-buster"
     },
     "features": {
-        // Add Docker-in-Docker support. A Debian base requires the proprietary
-        // Docker engine.
+        // Add Docker-in-Docker support. A Debian base requires the proprietary Docker engine.
         "ghcr.io/devcontainers/features/docker-in-docker:2": {
             "moby": "false"
         },
         // Add Kubernetes support.
+        "ghcr.io/rio/features/k3d:1": {},
         "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
         // Add Python support.
         "ghcr.io/devcontainers/features/python:1": {
             "version": "3.11"
         },
         // Add common utilities and name non-root user.
-        "ghcr.io/devcontainers/features/common-utils:2": {}
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": true,
+        }
     },
     "remoteEnv": {
-        // Add local Python packages compatible installed with PDM in PEP 582
-        // mode to search path.
+        // Add local Python packages compatible installed with PDM in PEP 582 mode to search path.
         "PATH": "${containerEnv:PATH}:/${containerWorkspaceFolder}/__pypackages__/3.11/bin",
         "PYTHONPATH": "${containerEnv:PYTHONPATH}:/${containerWorkspaceFolder}/__pypackages__/3.11/lib"
     },
@@ -36,12 +37,8 @@
             ]
         }
     },
-    // We delete the default `config.json` file created by Docker-in-Docker to
-    // work around this bug:
-    // https://github.com/devcontainers/features/issues/376. We also configure
-    // Git to work around `Error message: fatal: detected dubious ownership in repository`
-    "postCreateCommand": "pipx install pdm; pdm install; rm /home/node/.docker/config.json; git config --global --add safe.directory /garden/static",
-    // Launch our Dev Container as our non-root user inherited from Garden's
-    // base image.
+    // We delete the default `config.json` file created by Docker-in-Docker to work around this bug: https://github.com/devcontainers/features/issues/376. We also configure Git to work around `Error message: fatal: detected dubious ownership in repository`. Create k3d cluster with Traefik ingress controller disabled and run all pods on DinD network.
+    "postCreateCommand": "pipx install pdm; pdm install; rm /home/node/.docker/config.json; git config --global --add safe.directory /garden/static;  k3d cluster create --k3s-arg '--disable=traefik@server:0' --network host",
+    // Launch our Dev Container as our non-root user inherited from Garden's base image.
     "remoteUser": "node"
 }
