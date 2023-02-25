@@ -1,0 +1,2921 @@
+
+[2023-02-25T17:23:34.317Z] Scanning project root at /workspaces/garden/garden/examples/demo-project-start
+→ Includes: **/*garden.y*ml
+→ Excludes: .garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-02-25T17:23:34.706Z] Found 3 files in project root /workspaces/garden/garden/examples/demo-project-start
+
+[2023-02-25T17:23:34.878Z] Getting status...
+
+[2023-02-25T17:23:36.438Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-02-25T17:23:36.567Z] Kubernetes: Getting API resource info for group networking.k8s.io/v1
+
+[2023-02-25T17:23:36.603Z] An ingressClass “nginx" was set in the provider config for the Kubernetes provider but no matching IngressClass resource was found in the cluster. IngressClass resources are typically created by your Ingress Controller so this may suggest that it has not been properly set up.
+
+[2023-02-25T17:23:36.604Z] Initializing...
+
+[2023-02-25T17:23:36.874Z] Getting status...
+
+[2023-02-25T17:23:36.988Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-02-25T17:23:37.003Z] Getting status... → Cached
+
+[2023-02-25T17:23:37.006Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-02-25T17:23:37.016Z] Scanning project root at /garden/static/kubernetes/system
+→ Includes: **/*garden.y*ml
+→ Excludes: ../../../../workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-02-25T17:23:37.088Z] Found 11 files in project root /garden/static/kubernetes/system
+
+[2023-02-25T17:23:37.226Z] Resolving 11 modules...
+
+[2023-02-25T17:23:37.435Z] Resolving 11 modules... → Done
+
+[2023-02-25T17:23:37.448Z] Kubernetes: Getting API resource info for group apps/v1
+
+[2023-02-25T17:23:37.448Z] Kubernetes: Getting API resource info for group v1
+
+[2023-02-25T17:23:37.512Z] Getting currently deployed resource statuses...
+
+[2023-02-25T17:23:37.541Z] Comparing expected and deployed resources...
+
+[2023-02-25T17:23:37.542Z] All resources match.
+
+[2023-02-25T17:23:37.623Z] Initializing...
+
+[2023-02-25T17:23:37.627Z] Preparing environment...
+
+[2023-02-25T17:23:37.630Z] Configuring...
+
+[2023-02-25T17:23:37.630Z] Initializing...
+
+[2023-02-25T17:23:37.764Z] Getting status...
+
+[2023-02-25T17:23:38.018Z] An attempt to get kind version failed with Error: Command "kind version" failed with code ENOENT:
+
+[2023-02-25T17:23:38.036Z] Getting status... → Cached
+
+[2023-02-25T17:23:38.039Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-02-25T17:23:38.243Z] Getting status...
+
+[2023-02-25T17:23:38.290Z] Getting status... → Cached
+
+[2023-02-25T17:23:38.294Z] Run with --force-refresh to force a refresh of provider statuses.
+
+[2023-02-25T17:23:38.303Z] Scanning project root at /garden/static/kubernetes/system
+→ Includes: **/*garden.y*ml
+→ Excludes: ../../../../workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/**/*,.git,.gitmodules,.garden/**/*,debug-info*/**
+
+[2023-02-25T17:23:38.390Z] Found 11 files in project root /garden/static/kubernetes/system
+
+[2023-02-25T17:23:38.503Z] Resolving 11 modules...
+
+[2023-02-25T17:23:38.738Z] Resolving 11 modules... → Done
+
+[2023-02-25T17:23:38.758Z] Syncing 0 files from ingress-controller to ../../../../workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller (and removing any extraneous files)
+
+[2023-02-25T17:23:38.758Z] Syncing 0 files from default-backend to ../../../../workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/default-backend (and removing any extraneous files)
+
+[2023-02-25T17:23:38.790Z] Getting build status for v-24864f339e...
+
+[2023-02-25T17:23:38.794Z] Getting build status for v-9f251da908...
+
+[2023-02-25T17:23:38.800Z] Getting build status for v-24864f339e... → Already built
+
+[2023-02-25T17:23:38.803Z] Building version v-9f251da908...
+
+[2023-02-25T17:23:38.816Z] Fetching chart...
+
+[2023-02-25T17:23:38.819Z] Getting currently deployed resource statuses...
+
+[2023-02-25T17:23:38.867Z] Comparing expected and deployed resources...
+
+[2023-02-25T17:23:38.869Z] All resources match.
+
+[2023-02-25T17:23:38.883Z] Deploying version v-2d58c28944...
+
+[2023-02-25T17:23:38.888Z] Deploying version v-2d58c28944... → Already deployed
+
+[2023-02-25T17:23:41.397Z] Building version v-9f251da908... → Done (took 2.6 sec)
+
+[2023-02-25T17:23:41.404Z] Deploying version v-b5ac3ef2a2...
+
+[2023-02-25T17:28:42.616Z] [helm]: Error: INSTALLATION FAILED: release garden-nginx failed, and has been uninstalled due to atomic being set: timed out waiting for the condition
+
+[2023-02-25T17:28:42.630Z] Deploying version v-b5ac3ef2a2...
+
+[2023-02-25T17:28:42.728Z] 
+Failed deploying service 'ingress-controller' (from module 'ingress-controller'). Here is the output:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Command "/home/node/.garden/tools/helm/f67f27f2837e2821/linux-amd64/helm --kube-context k3d-k3s-default --namespace garden-system install garden-nginx /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx --namespace garden-system --timeout 300s --values /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx/garden-values.yml --atomic" failed with code 1:
+
+Error: INSTALLATION FAILED: release garden-nginx failed, and has been uninstalled due to atomic being set: timed out waiting for the condition
+
+Error: INSTALLATION FAILED: release garden-nginx failed, and has been uninstalled due to atomic being set: timed out waiting for the condition
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[2023-02-25T17:28:42.797Z] Error: local-kubernetes — an error occurred when configuring environment:
+Error: Command "/home/node/.garden/tools/helm/f67f27f2837e2821/linux-amd64/helm --kube-context k3d-k3s-default --namespace garden-system install garden-nginx /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx --namespace garden-system --timeout 300s --values /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx/garden-values.yml --atomic" failed with code 1:
+
+Error: INSTALLATION FAILED: release garden-nginx failed, and has been uninstalled due to atomic being set: timed out waiting for the condition
+
+Error: INSTALLATION FAILED: release garden-nginx failed, and has been uninstalled due to atomic being set: timed out waiting for the condition
+    at prepareSystemServices (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/plugins/kubernetes/system.ts:141:13)
+    at prepareSystem (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/plugins/kubernetes/init.ts:343:3)
+    at Object.prepareEnvironment (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/plugins/kubernetes/init.ts:236:3)
+    at /snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/actions.ts:1293:24
+    at wrapped.ensurePrepared (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/tasks/resolve-provider.ts:358:22)
+    at wrapped.process (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/tasks/resolve-provider.ts:241:20)
+    at TaskNode.process (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/task-graph.ts:801:20)
+    at wrapped.processNode (/snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/task-graph.ts:436:18)
+
+Error Details:
+
+error:
+  shortMessage: >-
+    Command failed with exit code 1:
+    /home/node/.garden/tools/helm/f67f27f2837e2821/linux-amd64/helm
+    --kube-context k3d-k3s-default --namespace garden-system install
+    garden-nginx
+    /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx
+    --namespace garden-system --timeout 300s --values
+    /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx/garden-values.yml
+    --atomic
+  command: >-
+    /home/node/.garden/tools/helm/f67f27f2837e2821/linux-amd64/helm
+    --kube-context k3d-k3s-default --namespace garden-system install
+    garden-nginx
+    /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx
+    --namespace garden-system --timeout 300s --values
+    /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx/garden-values.yml
+    --atomic
+  exitCode: 1
+  stdout: ''
+  stderr: >-
+    Error: INSTALLATION FAILED: release garden-nginx failed, and has been
+    uninstalled due to atomic being set: timed out waiting for the condition
+  all: >-
+    Error: INSTALLATION FAILED: release garden-nginx failed, and has been
+    uninstalled due to atomic being set: timed out waiting for the condition
+  failed: true
+  timedOut: false
+  isCanceled: false
+  killed: false
+results:
+  stage-build.default-backend:
+    type: stage-build
+    key: stage-build.default-backend
+    name: default-backend
+    description: staging build for default-backend
+    completedAt: '2023-02-25T17:23:38.785Z'
+    batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+    output: {}
+    dependencyResults: {}
+    version: v-24864f339e
+    startedAt: '2023-02-25T17:23:38.754Z'
+  stage-build.ingress-controller:
+    type: stage-build
+    key: stage-build.ingress-controller
+    name: ingress-controller
+    description: staging build for ingress-controller
+    completedAt: '2023-02-25T17:23:38.785Z'
+    batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+    output: {}
+    dependencyResults: {}
+    version: v-9f251da908
+    startedAt: '2023-02-25T17:23:38.754Z'
+  build.default-backend:
+    type: build
+    key: build.default-backend
+    name: default-backend
+    description: building default-backend
+    completedAt: '2023-02-25T17:23:38.803Z'
+    batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+    output:
+      fresh: false
+    dependencyResults:
+      stage-build.default-backend:
+        type: stage-build
+        key: stage-build.default-backend
+        name: default-backend
+        description: staging build for default-backend
+        completedAt: '2023-02-25T17:23:38.785Z'
+        batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+        output: {}
+        dependencyResults: {}
+        version: v-24864f339e
+        startedAt: '2023-02-25T17:23:38.754Z'
+    version: v-24864f339e
+    startedAt: '2023-02-25T17:23:38.786Z'
+  get-service-status.default-backend:
+    type: get-service-status
+    key: get-service-status.default-backend
+    name: default-backend
+    description: >-
+      getting status for service 'default-backend' (from module
+      'default-backend')
+    completedAt: '2023-02-25T17:23:38.871Z'
+    batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+    output:
+      forwardablePorts:
+        - name: http
+          protocol: TCP
+          targetPort: 80
+      ingresses: []
+      state: ready
+      namespaceStatuses:
+        - pluginName: local-kubernetes
+          namespaceName: garden-system
+          state: ready
+      version: v-2d58c28944
+      detail:
+        remoteResources:
+          - kind: Deployment
+            apiVersion: apps/v1
+            metadata:
+              name: default-backend
+              namespace: garden-system
+              uid: 661181cf-6532-441f-bf03-d86c109f6a14
+              resourceVersion: '1110'
+              generation: 1
+              creationTimestamp: '2023-02-25T17:15:04Z'
+              labels:
+                module: default-backend
+                service: default-backend
+              annotations:
+                deployment.kubernetes.io/revision: '1'
+                garden.io/configured.replicas: '1'
+                garden.io/generated: 'true'
+                garden.io/manifest-hash: >-
+                  f1477dfc4a89c46adbd86b74880d94e2fb2cf55da79c61f16f1d4b4dda9b80ca
+                garden.io/version: v-2d58c28944
+                kubectl.kubernetes.io/last-applied-configuration: >
+                  {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"f1477dfc4a89c46adbd86b74880d94e2fb2cf55da79c61f16f1d4b4dda9b80ca","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"},"name":"default-backend","namespace":"garden-system"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"default-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-2d58c28944"},{"name":"GARDEN_MODULE_VERSION","value":"v-24864f339e"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"gardendev/default-backend:v0.1","imagePullPolicy":"IfNotPresent","name":"default-backend","ports":[{"containerPort":80,"name":"http","protocol":"TCP"}],"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"90Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+              managedFields:
+                - manager: kubectl-client-side-apply
+                  operation: Update
+                  apiVersion: apps/v1
+                  time: '2023-02-25T17:15:04Z'
+                  fieldsType: FieldsV1
+                  fieldsV1:
+                    'f:metadata':
+                      'f:annotations':
+                        .: {}
+                        'f:garden.io/configured.replicas': {}
+                        'f:garden.io/generated': {}
+                        'f:garden.io/manifest-hash': {}
+                        'f:garden.io/version': {}
+                        'f:kubectl.kubernetes.io/last-applied-configuration': {}
+                      'f:labels':
+                        .: {}
+                        'f:module': {}
+                        'f:service': {}
+                    'f:spec':
+                      'f:progressDeadlineSeconds': {}
+                      'f:replicas': {}
+                      'f:revisionHistoryLimit': {}
+                      'f:selector': {}
+                      'f:strategy':
+                        'f:rollingUpdate':
+                          .: {}
+                          'f:maxSurge': {}
+                          'f:maxUnavailable': {}
+                        'f:type': {}
+                      'f:template':
+                        'f:metadata':
+                          'f:annotations':
+                            .: {}
+                            'f:garden.io/generated': {}
+                            'f:garden.io/manifest-hash': {}
+                            'f:garden.io/version': {}
+                          'f:labels':
+                            .: {}
+                            'f:module': {}
+                            'f:service': {}
+                        'f:spec':
+                          'f:containers':
+                            'k:{"name":"default-backend"}':
+                              .: {}
+                              'f:env':
+                                .: {}
+                                'k:{"name":"GARDEN_MODULE_VERSION"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:value': {}
+                                'k:{"name":"GARDEN_VERSION"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:value': {}
+                                'k:{"name":"POD_HOST_IP"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_IP"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_NAME"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_NAMESPACE"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_NODE_NAME"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_SERVICE_ACCOUNT"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_UID"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                              'f:image': {}
+                              'f:imagePullPolicy': {}
+                              'f:name': {}
+                              'f:ports':
+                                .: {}
+                                'k:{"containerPort":80,"protocol":"TCP"}':
+                                  .: {}
+                                  'f:containerPort': {}
+                                  'f:name': {}
+                                  'f:protocol': {}
+                              'f:resources':
+                                .: {}
+                                'f:limits':
+                                  .: {}
+                                  'f:cpu': {}
+                                  'f:memory': {}
+                                'f:requests':
+                                  .: {}
+                                  'f:cpu': {}
+                                  'f:memory': {}
+                              'f:securityContext':
+                                .: {}
+                                'f:allowPrivilegeEscalation': {}
+                              'f:terminationMessagePath': {}
+                              'f:terminationMessagePolicy': {}
+                          'f:dnsPolicy': {}
+                          'f:restartPolicy': {}
+                          'f:schedulerName': {}
+                          'f:securityContext': {}
+                          'f:terminationGracePeriodSeconds': {}
+                - manager: k3s
+                  operation: Update
+                  apiVersion: apps/v1
+                  time: '2023-02-25T17:15:09Z'
+                  fieldsType: FieldsV1
+                  fieldsV1:
+                    'f:metadata':
+                      'f:annotations':
+                        'f:deployment.kubernetes.io/revision': {}
+                    'f:status':
+                      'f:availableReplicas': {}
+                      'f:conditions':
+                        .: {}
+                        'k:{"type":"Available"}':
+                          .: {}
+                          'f:lastTransitionTime': {}
+                          'f:lastUpdateTime': {}
+                          'f:message': {}
+                          'f:reason': {}
+                          'f:status': {}
+                          'f:type': {}
+                        'k:{"type":"Progressing"}':
+                          .: {}
+                          'f:lastTransitionTime': {}
+                          'f:lastUpdateTime': {}
+                          'f:message': {}
+                          'f:reason': {}
+                          'f:status': {}
+                          'f:type': {}
+                      'f:observedGeneration': {}
+                      'f:readyReplicas': {}
+                      'f:replicas': {}
+                      'f:updatedReplicas': {}
+                  subresource: status
+            spec:
+              replicas: 1
+              selector:
+                matchLabels:
+                  service: default-backend
+              template:
+                metadata:
+                  creationTimestamp: null
+                  labels:
+                    module: default-backend
+                    service: default-backend
+                  annotations:
+                    garden.io/generated: 'true'
+                    garden.io/manifest-hash: >-
+                      e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5
+                    garden.io/version: v-2d58c28944
+                spec:
+                  containers:
+                    - name: default-backend
+                      image: 'gardendev/default-backend:v0.1'
+                      ports:
+                        - name: http
+                          containerPort: 80
+                          protocol: TCP
+                      env:
+                        - name: GARDEN_VERSION
+                          value: v-2d58c28944
+                        - name: GARDEN_MODULE_VERSION
+                          value: v-24864f339e
+                        - name: POD_HOST_IP
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: status.hostIP
+                        - name: POD_IP
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: status.podIP
+                        - name: POD_NAME
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: metadata.name
+                        - name: POD_NAMESPACE
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: metadata.namespace
+                        - name: POD_NODE_NAME
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: spec.nodeName
+                        - name: POD_SERVICE_ACCOUNT
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: spec.serviceAccountName
+                        - name: POD_UID
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: metadata.uid
+                      resources:
+                        limits:
+                          cpu: '1'
+                          memory: 1Gi
+                        requests:
+                          cpu: 10m
+                          memory: 90Mi
+                      terminationMessagePath: /dev/termination-log
+                      terminationMessagePolicy: File
+                      imagePullPolicy: IfNotPresent
+                      securityContext:
+                        allowPrivilegeEscalation: false
+                  restartPolicy: Always
+                  terminationGracePeriodSeconds: 5
+                  dnsPolicy: ClusterFirst
+                  securityContext: {}
+                  schedulerName: default-scheduler
+              strategy:
+                type: RollingUpdate
+                rollingUpdate:
+                  maxUnavailable: 1
+                  maxSurge: 1
+              revisionHistoryLimit: 3
+              progressDeadlineSeconds: 600
+            status:
+              observedGeneration: 1
+              replicas: 1
+              updatedReplicas: 1
+              readyReplicas: 1
+              availableReplicas: 1
+              conditions:
+                - type: Available
+                  status: 'True'
+                  lastUpdateTime: '2023-02-25T17:15:04Z'
+                  lastTransitionTime: '2023-02-25T17:15:04Z'
+                  reason: MinimumReplicasAvailable
+                  message: Deployment has minimum availability.
+                - type: Progressing
+                  status: 'True'
+                  lastUpdateTime: '2023-02-25T17:15:09Z'
+                  lastTransitionTime: '2023-02-25T17:15:04Z'
+                  reason: NewReplicaSetAvailable
+                  message: >-
+                    ReplicaSet "default-backend-7d7d4b7b58" has successfully
+                    progressed.
+          - kind: Service
+            apiVersion: v1
+            metadata:
+              name: default-backend
+              namespace: garden-system
+              uid: ea9b7635-4491-49de-9fea-041c64bee19c
+              resourceVersion: '1088'
+              creationTimestamp: '2023-02-25T17:15:04Z'
+              labels:
+                module: default-backend
+                service: default-backend
+              annotations:
+                garden.io/generated: 'true'
+                garden.io/manifest-hash: >-
+                  e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5
+                garden.io/version: v-2d58c28944
+                kubectl.kubernetes.io/last-applied-configuration: >
+                  {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"},"name":"default-backend","namespace":"garden-system"},"spec":{"ports":[{"name":"http","port":80,"protocol":"TCP","targetPort":80}],"selector":{"service":"default-backend"},"type":"ClusterIP"}}
+              managedFields:
+                - manager: kubectl-client-side-apply
+                  operation: Update
+                  apiVersion: v1
+                  time: '2023-02-25T17:15:04Z'
+                  fieldsType: FieldsV1
+                  fieldsV1:
+                    'f:metadata':
+                      'f:annotations':
+                        .: {}
+                        'f:garden.io/generated': {}
+                        'f:garden.io/manifest-hash': {}
+                        'f:garden.io/version': {}
+                        'f:kubectl.kubernetes.io/last-applied-configuration': {}
+                      'f:labels':
+                        .: {}
+                        'f:module': {}
+                        'f:service': {}
+                    'f:spec':
+                      'f:internalTrafficPolicy': {}
+                      'f:ports':
+                        .: {}
+                        'k:{"port":80,"protocol":"TCP"}':
+                          .: {}
+                          'f:name': {}
+                          'f:port': {}
+                          'f:protocol': {}
+                          'f:targetPort': {}
+                      'f:selector': {}
+                      'f:sessionAffinity': {}
+                      'f:type': {}
+            spec:
+              ports:
+                - name: http
+                  protocol: TCP
+                  port: 80
+                  targetPort: 80
+              selector:
+                service: default-backend
+              clusterIP: 10.43.113.188
+              clusterIPs:
+                - 10.43.113.188
+              type: ClusterIP
+              sessionAffinity: None
+              ipFamilies:
+                - IPv4
+              ipFamilyPolicy: SingleStack
+              internalTrafficPolicy: Cluster
+            status:
+              loadBalancer: {}
+        workload:
+          kind: Deployment
+          apiVersion: apps/v1
+          metadata:
+            name: default-backend
+            annotations:
+              garden.io/configured.replicas: '1'
+              garden.io/generated: 'true'
+              garden.io/version: v-2d58c28944
+            namespace: garden-system
+            labels:
+              module: default-backend
+              service: default-backend
+          spec:
+            selector:
+              matchLabels:
+                service: default-backend
+            template:
+              metadata:
+                annotations:
+                  garden.io/generated: 'true'
+                  garden.io/version: v-2d58c28944
+                labels:
+                  module: default-backend
+                  service: default-backend
+              spec:
+                containers:
+                  - name: default-backend
+                    image: 'gardendev/default-backend:v0.1'
+                    env:
+                      - name: GARDEN_VERSION
+                        value: v-2d58c28944
+                      - name: GARDEN_MODULE_VERSION
+                        value: v-24864f339e
+                      - name: POD_HOST_IP
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: status.hostIP
+                      - name: POD_IP
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: status.podIP
+                      - name: POD_NAME
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: metadata.name
+                      - name: POD_NAMESPACE
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: metadata.namespace
+                      - name: POD_NODE_NAME
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: spec.nodeName
+                      - name: POD_SERVICE_ACCOUNT
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: spec.serviceAccountName
+                      - name: POD_UID
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: metadata.uid
+                    ports:
+                      - name: http
+                        protocol: TCP
+                        containerPort: 80
+                    resources:
+                      requests:
+                        cpu: 10m
+                        memory: 90Mi
+                      limits:
+                        memory: 1Gi
+                        cpu: '1'
+                    imagePullPolicy: IfNotPresent
+                    securityContext:
+                      allowPrivilegeEscalation: false
+                restartPolicy: Always
+                terminationGracePeriodSeconds: 5
+                dnsPolicy: ClusterFirst
+            replicas: 1
+            strategy:
+              type: RollingUpdate
+              rollingUpdate:
+                maxUnavailable: 1
+                maxSurge: 1
+            revisionHistoryLimit: 3
+      devMode: false
+      localMode: false
+      outputs: {}
+    dependencyResults: {}
+    version: v-2d58c28944
+    startedAt: '2023-02-25T17:23:38.751Z'
+  deploy.default-backend:
+    type: deploy
+    key: deploy.default-backend
+    name: default-backend
+    description: deploying service 'default-backend' (from module 'default-backend')
+    completedAt: '2023-02-25T17:23:38.889Z'
+    batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+    output:
+      forwardablePorts:
+        - name: http
+          protocol: TCP
+          targetPort: 80
+      ingresses: []
+      state: ready
+      namespaceStatuses:
+        - pluginName: local-kubernetes
+          namespaceName: garden-system
+          state: ready
+      version: v-2d58c28944
+      detail:
+        remoteResources:
+          - kind: Deployment
+            apiVersion: apps/v1
+            metadata:
+              name: default-backend
+              namespace: garden-system
+              uid: 661181cf-6532-441f-bf03-d86c109f6a14
+              resourceVersion: '1110'
+              generation: 1
+              creationTimestamp: '2023-02-25T17:15:04Z'
+              labels:
+                module: default-backend
+                service: default-backend
+              annotations:
+                deployment.kubernetes.io/revision: '1'
+                garden.io/configured.replicas: '1'
+                garden.io/generated: 'true'
+                garden.io/manifest-hash: >-
+                  f1477dfc4a89c46adbd86b74880d94e2fb2cf55da79c61f16f1d4b4dda9b80ca
+                garden.io/version: v-2d58c28944
+                kubectl.kubernetes.io/last-applied-configuration: >
+                  {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"f1477dfc4a89c46adbd86b74880d94e2fb2cf55da79c61f16f1d4b4dda9b80ca","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"},"name":"default-backend","namespace":"garden-system"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"default-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-2d58c28944"},{"name":"GARDEN_MODULE_VERSION","value":"v-24864f339e"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"gardendev/default-backend:v0.1","imagePullPolicy":"IfNotPresent","name":"default-backend","ports":[{"containerPort":80,"name":"http","protocol":"TCP"}],"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"90Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+              managedFields:
+                - manager: kubectl-client-side-apply
+                  operation: Update
+                  apiVersion: apps/v1
+                  time: '2023-02-25T17:15:04Z'
+                  fieldsType: FieldsV1
+                  fieldsV1:
+                    'f:metadata':
+                      'f:annotations':
+                        .: {}
+                        'f:garden.io/configured.replicas': {}
+                        'f:garden.io/generated': {}
+                        'f:garden.io/manifest-hash': {}
+                        'f:garden.io/version': {}
+                        'f:kubectl.kubernetes.io/last-applied-configuration': {}
+                      'f:labels':
+                        .: {}
+                        'f:module': {}
+                        'f:service': {}
+                    'f:spec':
+                      'f:progressDeadlineSeconds': {}
+                      'f:replicas': {}
+                      'f:revisionHistoryLimit': {}
+                      'f:selector': {}
+                      'f:strategy':
+                        'f:rollingUpdate':
+                          .: {}
+                          'f:maxSurge': {}
+                          'f:maxUnavailable': {}
+                        'f:type': {}
+                      'f:template':
+                        'f:metadata':
+                          'f:annotations':
+                            .: {}
+                            'f:garden.io/generated': {}
+                            'f:garden.io/manifest-hash': {}
+                            'f:garden.io/version': {}
+                          'f:labels':
+                            .: {}
+                            'f:module': {}
+                            'f:service': {}
+                        'f:spec':
+                          'f:containers':
+                            'k:{"name":"default-backend"}':
+                              .: {}
+                              'f:env':
+                                .: {}
+                                'k:{"name":"GARDEN_MODULE_VERSION"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:value': {}
+                                'k:{"name":"GARDEN_VERSION"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:value': {}
+                                'k:{"name":"POD_HOST_IP"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_IP"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_NAME"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_NAMESPACE"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_NODE_NAME"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_SERVICE_ACCOUNT"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                                'k:{"name":"POD_UID"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:valueFrom':
+                                    .: {}
+                                    'f:fieldRef': {}
+                              'f:image': {}
+                              'f:imagePullPolicy': {}
+                              'f:name': {}
+                              'f:ports':
+                                .: {}
+                                'k:{"containerPort":80,"protocol":"TCP"}':
+                                  .: {}
+                                  'f:containerPort': {}
+                                  'f:name': {}
+                                  'f:protocol': {}
+                              'f:resources':
+                                .: {}
+                                'f:limits':
+                                  .: {}
+                                  'f:cpu': {}
+                                  'f:memory': {}
+                                'f:requests':
+                                  .: {}
+                                  'f:cpu': {}
+                                  'f:memory': {}
+                              'f:securityContext':
+                                .: {}
+                                'f:allowPrivilegeEscalation': {}
+                              'f:terminationMessagePath': {}
+                              'f:terminationMessagePolicy': {}
+                          'f:dnsPolicy': {}
+                          'f:restartPolicy': {}
+                          'f:schedulerName': {}
+                          'f:securityContext': {}
+                          'f:terminationGracePeriodSeconds': {}
+                - manager: k3s
+                  operation: Update
+                  apiVersion: apps/v1
+                  time: '2023-02-25T17:15:09Z'
+                  fieldsType: FieldsV1
+                  fieldsV1:
+                    'f:metadata':
+                      'f:annotations':
+                        'f:deployment.kubernetes.io/revision': {}
+                    'f:status':
+                      'f:availableReplicas': {}
+                      'f:conditions':
+                        .: {}
+                        'k:{"type":"Available"}':
+                          .: {}
+                          'f:lastTransitionTime': {}
+                          'f:lastUpdateTime': {}
+                          'f:message': {}
+                          'f:reason': {}
+                          'f:status': {}
+                          'f:type': {}
+                        'k:{"type":"Progressing"}':
+                          .: {}
+                          'f:lastTransitionTime': {}
+                          'f:lastUpdateTime': {}
+                          'f:message': {}
+                          'f:reason': {}
+                          'f:status': {}
+                          'f:type': {}
+                      'f:observedGeneration': {}
+                      'f:readyReplicas': {}
+                      'f:replicas': {}
+                      'f:updatedReplicas': {}
+                  subresource: status
+            spec:
+              replicas: 1
+              selector:
+                matchLabels:
+                  service: default-backend
+              template:
+                metadata:
+                  creationTimestamp: null
+                  labels:
+                    module: default-backend
+                    service: default-backend
+                  annotations:
+                    garden.io/generated: 'true'
+                    garden.io/manifest-hash: >-
+                      e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5
+                    garden.io/version: v-2d58c28944
+                spec:
+                  containers:
+                    - name: default-backend
+                      image: 'gardendev/default-backend:v0.1'
+                      ports:
+                        - name: http
+                          containerPort: 80
+                          protocol: TCP
+                      env:
+                        - name: GARDEN_VERSION
+                          value: v-2d58c28944
+                        - name: GARDEN_MODULE_VERSION
+                          value: v-24864f339e
+                        - name: POD_HOST_IP
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: status.hostIP
+                        - name: POD_IP
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: status.podIP
+                        - name: POD_NAME
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: metadata.name
+                        - name: POD_NAMESPACE
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: metadata.namespace
+                        - name: POD_NODE_NAME
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: spec.nodeName
+                        - name: POD_SERVICE_ACCOUNT
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: spec.serviceAccountName
+                        - name: POD_UID
+                          valueFrom:
+                            fieldRef:
+                              apiVersion: v1
+                              fieldPath: metadata.uid
+                      resources:
+                        limits:
+                          cpu: '1'
+                          memory: 1Gi
+                        requests:
+                          cpu: 10m
+                          memory: 90Mi
+                      terminationMessagePath: /dev/termination-log
+                      terminationMessagePolicy: File
+                      imagePullPolicy: IfNotPresent
+                      securityContext:
+                        allowPrivilegeEscalation: false
+                  restartPolicy: Always
+                  terminationGracePeriodSeconds: 5
+                  dnsPolicy: ClusterFirst
+                  securityContext: {}
+                  schedulerName: default-scheduler
+              strategy:
+                type: RollingUpdate
+                rollingUpdate:
+                  maxUnavailable: 1
+                  maxSurge: 1
+              revisionHistoryLimit: 3
+              progressDeadlineSeconds: 600
+            status:
+              observedGeneration: 1
+              replicas: 1
+              updatedReplicas: 1
+              readyReplicas: 1
+              availableReplicas: 1
+              conditions:
+                - type: Available
+                  status: 'True'
+                  lastUpdateTime: '2023-02-25T17:15:04Z'
+                  lastTransitionTime: '2023-02-25T17:15:04Z'
+                  reason: MinimumReplicasAvailable
+                  message: Deployment has minimum availability.
+                - type: Progressing
+                  status: 'True'
+                  lastUpdateTime: '2023-02-25T17:15:09Z'
+                  lastTransitionTime: '2023-02-25T17:15:04Z'
+                  reason: NewReplicaSetAvailable
+                  message: >-
+                    ReplicaSet "default-backend-7d7d4b7b58" has successfully
+                    progressed.
+          - kind: Service
+            apiVersion: v1
+            metadata:
+              name: default-backend
+              namespace: garden-system
+              uid: ea9b7635-4491-49de-9fea-041c64bee19c
+              resourceVersion: '1088'
+              creationTimestamp: '2023-02-25T17:15:04Z'
+              labels:
+                module: default-backend
+                service: default-backend
+              annotations:
+                garden.io/generated: 'true'
+                garden.io/manifest-hash: >-
+                  e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5
+                garden.io/version: v-2d58c28944
+                kubectl.kubernetes.io/last-applied-configuration: >
+                  {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"},"name":"default-backend","namespace":"garden-system"},"spec":{"ports":[{"name":"http","port":80,"protocol":"TCP","targetPort":80}],"selector":{"service":"default-backend"},"type":"ClusterIP"}}
+              managedFields:
+                - manager: kubectl-client-side-apply
+                  operation: Update
+                  apiVersion: v1
+                  time: '2023-02-25T17:15:04Z'
+                  fieldsType: FieldsV1
+                  fieldsV1:
+                    'f:metadata':
+                      'f:annotations':
+                        .: {}
+                        'f:garden.io/generated': {}
+                        'f:garden.io/manifest-hash': {}
+                        'f:garden.io/version': {}
+                        'f:kubectl.kubernetes.io/last-applied-configuration': {}
+                      'f:labels':
+                        .: {}
+                        'f:module': {}
+                        'f:service': {}
+                    'f:spec':
+                      'f:internalTrafficPolicy': {}
+                      'f:ports':
+                        .: {}
+                        'k:{"port":80,"protocol":"TCP"}':
+                          .: {}
+                          'f:name': {}
+                          'f:port': {}
+                          'f:protocol': {}
+                          'f:targetPort': {}
+                      'f:selector': {}
+                      'f:sessionAffinity': {}
+                      'f:type': {}
+            spec:
+              ports:
+                - name: http
+                  protocol: TCP
+                  port: 80
+                  targetPort: 80
+              selector:
+                service: default-backend
+              clusterIP: 10.43.113.188
+              clusterIPs:
+                - 10.43.113.188
+              type: ClusterIP
+              sessionAffinity: None
+              ipFamilies:
+                - IPv4
+              ipFamilyPolicy: SingleStack
+              internalTrafficPolicy: Cluster
+            status:
+              loadBalancer: {}
+        workload:
+          kind: Deployment
+          apiVersion: apps/v1
+          metadata:
+            name: default-backend
+            annotations:
+              garden.io/configured.replicas: '1'
+              garden.io/generated: 'true'
+              garden.io/version: v-2d58c28944
+            namespace: garden-system
+            labels:
+              module: default-backend
+              service: default-backend
+          spec:
+            selector:
+              matchLabels:
+                service: default-backend
+            template:
+              metadata:
+                annotations:
+                  garden.io/generated: 'true'
+                  garden.io/version: v-2d58c28944
+                labels:
+                  module: default-backend
+                  service: default-backend
+              spec:
+                containers:
+                  - name: default-backend
+                    image: 'gardendev/default-backend:v0.1'
+                    env:
+                      - name: GARDEN_VERSION
+                        value: v-2d58c28944
+                      - name: GARDEN_MODULE_VERSION
+                        value: v-24864f339e
+                      - name: POD_HOST_IP
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: status.hostIP
+                      - name: POD_IP
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: status.podIP
+                      - name: POD_NAME
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: metadata.name
+                      - name: POD_NAMESPACE
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: metadata.namespace
+                      - name: POD_NODE_NAME
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: spec.nodeName
+                      - name: POD_SERVICE_ACCOUNT
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: spec.serviceAccountName
+                      - name: POD_UID
+                        valueFrom:
+                          fieldRef:
+                            fieldPath: metadata.uid
+                    ports:
+                      - name: http
+                        protocol: TCP
+                        containerPort: 80
+                    resources:
+                      requests:
+                        cpu: 10m
+                        memory: 90Mi
+                      limits:
+                        memory: 1Gi
+                        cpu: '1'
+                    imagePullPolicy: IfNotPresent
+                    securityContext:
+                      allowPrivilegeEscalation: false
+                restartPolicy: Always
+                terminationGracePeriodSeconds: 5
+                dnsPolicy: ClusterFirst
+            replicas: 1
+            strategy:
+              type: RollingUpdate
+              rollingUpdate:
+                maxUnavailable: 1
+                maxSurge: 1
+            revisionHistoryLimit: 3
+      devMode: false
+      localMode: false
+      outputs: {}
+    dependencyResults:
+      get-service-status.default-backend:
+        type: get-service-status
+        key: get-service-status.default-backend
+        name: default-backend
+        description: >-
+          getting status for service 'default-backend' (from module
+          'default-backend')
+        completedAt: '2023-02-25T17:23:38.871Z'
+        batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+        output:
+          forwardablePorts:
+            - name: http
+              protocol: TCP
+              targetPort: 80
+          ingresses: []
+          state: ready
+          namespaceStatuses:
+            - pluginName: local-kubernetes
+              namespaceName: garden-system
+              state: ready
+          version: v-2d58c28944
+          detail:
+            remoteResources:
+              - kind: Deployment
+                apiVersion: apps/v1
+                metadata:
+                  name: default-backend
+                  namespace: garden-system
+                  uid: 661181cf-6532-441f-bf03-d86c109f6a14
+                  resourceVersion: '1110'
+                  generation: 1
+                  creationTimestamp: '2023-02-25T17:15:04Z'
+                  labels:
+                    module: default-backend
+                    service: default-backend
+                  annotations:
+                    deployment.kubernetes.io/revision: '1'
+                    garden.io/configured.replicas: '1'
+                    garden.io/generated: 'true'
+                    garden.io/manifest-hash: >-
+                      f1477dfc4a89c46adbd86b74880d94e2fb2cf55da79c61f16f1d4b4dda9b80ca
+                    garden.io/version: v-2d58c28944
+                    kubectl.kubernetes.io/last-applied-configuration: >
+                      {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"f1477dfc4a89c46adbd86b74880d94e2fb2cf55da79c61f16f1d4b4dda9b80ca","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"},"name":"default-backend","namespace":"garden-system"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"default-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-2d58c28944"},{"name":"GARDEN_MODULE_VERSION","value":"v-24864f339e"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"gardendev/default-backend:v0.1","imagePullPolicy":"IfNotPresent","name":"default-backend","ports":[{"containerPort":80,"name":"http","protocol":"TCP"}],"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"90Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+                  managedFields:
+                    - manager: kubectl-client-side-apply
+                      operation: Update
+                      apiVersion: apps/v1
+                      time: '2023-02-25T17:15:04Z'
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        'f:metadata':
+                          'f:annotations':
+                            .: {}
+                            'f:garden.io/configured.replicas': {}
+                            'f:garden.io/generated': {}
+                            'f:garden.io/manifest-hash': {}
+                            'f:garden.io/version': {}
+                            'f:kubectl.kubernetes.io/last-applied-configuration': {}
+                          'f:labels':
+                            .: {}
+                            'f:module': {}
+                            'f:service': {}
+                        'f:spec':
+                          'f:progressDeadlineSeconds': {}
+                          'f:replicas': {}
+                          'f:revisionHistoryLimit': {}
+                          'f:selector': {}
+                          'f:strategy':
+                            'f:rollingUpdate':
+                              .: {}
+                              'f:maxSurge': {}
+                              'f:maxUnavailable': {}
+                            'f:type': {}
+                          'f:template':
+                            'f:metadata':
+                              'f:annotations':
+                                .: {}
+                                'f:garden.io/generated': {}
+                                'f:garden.io/manifest-hash': {}
+                                'f:garden.io/version': {}
+                              'f:labels':
+                                .: {}
+                                'f:module': {}
+                                'f:service': {}
+                            'f:spec':
+                              'f:containers':
+                                'k:{"name":"default-backend"}':
+                                  .: {}
+                                  'f:env':
+                                    .: {}
+                                    'k:{"name":"GARDEN_MODULE_VERSION"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:value': {}
+                                    'k:{"name":"GARDEN_VERSION"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:value': {}
+                                    'k:{"name":"POD_HOST_IP"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_IP"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_NAME"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_NAMESPACE"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_NODE_NAME"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_SERVICE_ACCOUNT"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_UID"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                  'f:image': {}
+                                  'f:imagePullPolicy': {}
+                                  'f:name': {}
+                                  'f:ports':
+                                    .: {}
+                                    'k:{"containerPort":80,"protocol":"TCP"}':
+                                      .: {}
+                                      'f:containerPort': {}
+                                      'f:name': {}
+                                      'f:protocol': {}
+                                  'f:resources':
+                                    .: {}
+                                    'f:limits':
+                                      .: {}
+                                      'f:cpu': {}
+                                      'f:memory': {}
+                                    'f:requests':
+                                      .: {}
+                                      'f:cpu': {}
+                                      'f:memory': {}
+                                  'f:securityContext':
+                                    .: {}
+                                    'f:allowPrivilegeEscalation': {}
+                                  'f:terminationMessagePath': {}
+                                  'f:terminationMessagePolicy': {}
+                              'f:dnsPolicy': {}
+                              'f:restartPolicy': {}
+                              'f:schedulerName': {}
+                              'f:securityContext': {}
+                              'f:terminationGracePeriodSeconds': {}
+                    - manager: k3s
+                      operation: Update
+                      apiVersion: apps/v1
+                      time: '2023-02-25T17:15:09Z'
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        'f:metadata':
+                          'f:annotations':
+                            'f:deployment.kubernetes.io/revision': {}
+                        'f:status':
+                          'f:availableReplicas': {}
+                          'f:conditions':
+                            .: {}
+                            'k:{"type":"Available"}':
+                              .: {}
+                              'f:lastTransitionTime': {}
+                              'f:lastUpdateTime': {}
+                              'f:message': {}
+                              'f:reason': {}
+                              'f:status': {}
+                              'f:type': {}
+                            'k:{"type":"Progressing"}':
+                              .: {}
+                              'f:lastTransitionTime': {}
+                              'f:lastUpdateTime': {}
+                              'f:message': {}
+                              'f:reason': {}
+                              'f:status': {}
+                              'f:type': {}
+                          'f:observedGeneration': {}
+                          'f:readyReplicas': {}
+                          'f:replicas': {}
+                          'f:updatedReplicas': {}
+                      subresource: status
+                spec:
+                  replicas: 1
+                  selector:
+                    matchLabels:
+                      service: default-backend
+                  template:
+                    metadata:
+                      creationTimestamp: null
+                      labels:
+                        module: default-backend
+                        service: default-backend
+                      annotations:
+                        garden.io/generated: 'true'
+                        garden.io/manifest-hash: >-
+                          e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5
+                        garden.io/version: v-2d58c28944
+                    spec:
+                      containers:
+                        - name: default-backend
+                          image: 'gardendev/default-backend:v0.1'
+                          ports:
+                            - name: http
+                              containerPort: 80
+                              protocol: TCP
+                          env:
+                            - name: GARDEN_VERSION
+                              value: v-2d58c28944
+                            - name: GARDEN_MODULE_VERSION
+                              value: v-24864f339e
+                            - name: POD_HOST_IP
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: status.hostIP
+                            - name: POD_IP
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: status.podIP
+                            - name: POD_NAME
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: metadata.name
+                            - name: POD_NAMESPACE
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: metadata.namespace
+                            - name: POD_NODE_NAME
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: spec.nodeName
+                            - name: POD_SERVICE_ACCOUNT
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: spec.serviceAccountName
+                            - name: POD_UID
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: metadata.uid
+                          resources:
+                            limits:
+                              cpu: '1'
+                              memory: 1Gi
+                            requests:
+                              cpu: 10m
+                              memory: 90Mi
+                          terminationMessagePath: /dev/termination-log
+                          terminationMessagePolicy: File
+                          imagePullPolicy: IfNotPresent
+                          securityContext:
+                            allowPrivilegeEscalation: false
+                      restartPolicy: Always
+                      terminationGracePeriodSeconds: 5
+                      dnsPolicy: ClusterFirst
+                      securityContext: {}
+                      schedulerName: default-scheduler
+                  strategy:
+                    type: RollingUpdate
+                    rollingUpdate:
+                      maxUnavailable: 1
+                      maxSurge: 1
+                  revisionHistoryLimit: 3
+                  progressDeadlineSeconds: 600
+                status:
+                  observedGeneration: 1
+                  replicas: 1
+                  updatedReplicas: 1
+                  readyReplicas: 1
+                  availableReplicas: 1
+                  conditions:
+                    - type: Available
+                      status: 'True'
+                      lastUpdateTime: '2023-02-25T17:15:04Z'
+                      lastTransitionTime: '2023-02-25T17:15:04Z'
+                      reason: MinimumReplicasAvailable
+                      message: Deployment has minimum availability.
+                    - type: Progressing
+                      status: 'True'
+                      lastUpdateTime: '2023-02-25T17:15:09Z'
+                      lastTransitionTime: '2023-02-25T17:15:04Z'
+                      reason: NewReplicaSetAvailable
+                      message: >-
+                        ReplicaSet "default-backend-7d7d4b7b58" has successfully
+                        progressed.
+              - kind: Service
+                apiVersion: v1
+                metadata:
+                  name: default-backend
+                  namespace: garden-system
+                  uid: ea9b7635-4491-49de-9fea-041c64bee19c
+                  resourceVersion: '1088'
+                  creationTimestamp: '2023-02-25T17:15:04Z'
+                  labels:
+                    module: default-backend
+                    service: default-backend
+                  annotations:
+                    garden.io/generated: 'true'
+                    garden.io/manifest-hash: >-
+                      e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5
+                    garden.io/version: v-2d58c28944
+                    kubectl.kubernetes.io/last-applied-configuration: >
+                      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"},"name":"default-backend","namespace":"garden-system"},"spec":{"ports":[{"name":"http","port":80,"protocol":"TCP","targetPort":80}],"selector":{"service":"default-backend"},"type":"ClusterIP"}}
+                  managedFields:
+                    - manager: kubectl-client-side-apply
+                      operation: Update
+                      apiVersion: v1
+                      time: '2023-02-25T17:15:04Z'
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        'f:metadata':
+                          'f:annotations':
+                            .: {}
+                            'f:garden.io/generated': {}
+                            'f:garden.io/manifest-hash': {}
+                            'f:garden.io/version': {}
+                            'f:kubectl.kubernetes.io/last-applied-configuration': {}
+                          'f:labels':
+                            .: {}
+                            'f:module': {}
+                            'f:service': {}
+                        'f:spec':
+                          'f:internalTrafficPolicy': {}
+                          'f:ports':
+                            .: {}
+                            'k:{"port":80,"protocol":"TCP"}':
+                              .: {}
+                              'f:name': {}
+                              'f:port': {}
+                              'f:protocol': {}
+                              'f:targetPort': {}
+                          'f:selector': {}
+                          'f:sessionAffinity': {}
+                          'f:type': {}
+                spec:
+                  ports:
+                    - name: http
+                      protocol: TCP
+                      port: 80
+                      targetPort: 80
+                  selector:
+                    service: default-backend
+                  clusterIP: 10.43.113.188
+                  clusterIPs:
+                    - 10.43.113.188
+                  type: ClusterIP
+                  sessionAffinity: None
+                  ipFamilies:
+                    - IPv4
+                  ipFamilyPolicy: SingleStack
+                  internalTrafficPolicy: Cluster
+                status:
+                  loadBalancer: {}
+            workload:
+              kind: Deployment
+              apiVersion: apps/v1
+              metadata:
+                name: default-backend
+                annotations:
+                  garden.io/configured.replicas: '1'
+                  garden.io/generated: 'true'
+                  garden.io/version: v-2d58c28944
+                namespace: garden-system
+                labels:
+                  module: default-backend
+                  service: default-backend
+              spec:
+                selector:
+                  matchLabels:
+                    service: default-backend
+                template:
+                  metadata:
+                    annotations:
+                      garden.io/generated: 'true'
+                      garden.io/version: v-2d58c28944
+                    labels:
+                      module: default-backend
+                      service: default-backend
+                  spec:
+                    containers:
+                      - name: default-backend
+                        image: 'gardendev/default-backend:v0.1'
+                        env:
+                          - name: GARDEN_VERSION
+                            value: v-2d58c28944
+                          - name: GARDEN_MODULE_VERSION
+                            value: v-24864f339e
+                          - name: POD_HOST_IP
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: status.hostIP
+                          - name: POD_IP
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: status.podIP
+                          - name: POD_NAME
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: metadata.name
+                          - name: POD_NAMESPACE
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: metadata.namespace
+                          - name: POD_NODE_NAME
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: spec.nodeName
+                          - name: POD_SERVICE_ACCOUNT
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: spec.serviceAccountName
+                          - name: POD_UID
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: metadata.uid
+                        ports:
+                          - name: http
+                            protocol: TCP
+                            containerPort: 80
+                        resources:
+                          requests:
+                            cpu: 10m
+                            memory: 90Mi
+                          limits:
+                            memory: 1Gi
+                            cpu: '1'
+                        imagePullPolicy: IfNotPresent
+                        securityContext:
+                          allowPrivilegeEscalation: false
+                    restartPolicy: Always
+                    terminationGracePeriodSeconds: 5
+                    dnsPolicy: ClusterFirst
+                replicas: 1
+                strategy:
+                  type: RollingUpdate
+                  rollingUpdate:
+                    maxUnavailable: 1
+                    maxSurge: 1
+                revisionHistoryLimit: 3
+          devMode: false
+          localMode: false
+          outputs: {}
+        dependencyResults: {}
+        version: v-2d58c28944
+        startedAt: '2023-02-25T17:23:38.751Z'
+      build.default-backend:
+        type: build
+        key: build.default-backend
+        name: default-backend
+        description: building default-backend
+        completedAt: '2023-02-25T17:23:38.803Z'
+        batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+        output:
+          fresh: false
+        dependencyResults:
+          stage-build.default-backend:
+            type: stage-build
+            key: stage-build.default-backend
+            name: default-backend
+            description: staging build for default-backend
+            completedAt: '2023-02-25T17:23:38.785Z'
+            batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+            output: {}
+            dependencyResults: {}
+            version: v-24864f339e
+            startedAt: '2023-02-25T17:23:38.754Z'
+        version: v-24864f339e
+        startedAt: '2023-02-25T17:23:38.786Z'
+    version: v-2d58c28944
+    startedAt: '2023-02-25T17:23:38.879Z'
+  get-service-status.ingress-controller:
+    type: get-service-status
+    key: get-service-status.ingress-controller
+    name: ingress-controller
+    description: >-
+      getting status for service 'ingress-controller' (from module
+      'ingress-controller')
+    completedAt: '2023-02-25T17:23:38.992Z'
+    batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+    output:
+      forwardablePorts: []
+      state: missing
+      detail: {}
+      namespaceStatuses:
+        - pluginName: local-kubernetes
+          namespaceName: garden-system
+          state: ready
+      ingresses: []
+      outputs: {}
+    dependencyResults:
+      get-service-status.default-backend:
+        type: get-service-status
+        key: get-service-status.default-backend
+        name: default-backend
+        description: >-
+          getting status for service 'default-backend' (from module
+          'default-backend')
+        completedAt: '2023-02-25T17:23:38.871Z'
+        batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+        output:
+          forwardablePorts:
+            - name: http
+              protocol: TCP
+              targetPort: 80
+          ingresses: []
+          state: ready
+          namespaceStatuses:
+            - pluginName: local-kubernetes
+              namespaceName: garden-system
+              state: ready
+          version: v-2d58c28944
+          detail:
+            remoteResources:
+              - kind: Deployment
+                apiVersion: apps/v1
+                metadata:
+                  name: default-backend
+                  namespace: garden-system
+                  uid: 661181cf-6532-441f-bf03-d86c109f6a14
+                  resourceVersion: '1110'
+                  generation: 1
+                  creationTimestamp: '2023-02-25T17:15:04Z'
+                  labels:
+                    module: default-backend
+                    service: default-backend
+                  annotations:
+                    deployment.kubernetes.io/revision: '1'
+                    garden.io/configured.replicas: '1'
+                    garden.io/generated: 'true'
+                    garden.io/manifest-hash: >-
+                      f1477dfc4a89c46adbd86b74880d94e2fb2cf55da79c61f16f1d4b4dda9b80ca
+                    garden.io/version: v-2d58c28944
+                    kubectl.kubernetes.io/last-applied-configuration: >
+                      {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"f1477dfc4a89c46adbd86b74880d94e2fb2cf55da79c61f16f1d4b4dda9b80ca","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"},"name":"default-backend","namespace":"garden-system"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"default-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-2d58c28944"},{"name":"GARDEN_MODULE_VERSION","value":"v-24864f339e"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"gardendev/default-backend:v0.1","imagePullPolicy":"IfNotPresent","name":"default-backend","ports":[{"containerPort":80,"name":"http","protocol":"TCP"}],"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"90Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+                  managedFields:
+                    - manager: kubectl-client-side-apply
+                      operation: Update
+                      apiVersion: apps/v1
+                      time: '2023-02-25T17:15:04Z'
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        'f:metadata':
+                          'f:annotations':
+                            .: {}
+                            'f:garden.io/configured.replicas': {}
+                            'f:garden.io/generated': {}
+                            'f:garden.io/manifest-hash': {}
+                            'f:garden.io/version': {}
+                            'f:kubectl.kubernetes.io/last-applied-configuration': {}
+                          'f:labels':
+                            .: {}
+                            'f:module': {}
+                            'f:service': {}
+                        'f:spec':
+                          'f:progressDeadlineSeconds': {}
+                          'f:replicas': {}
+                          'f:revisionHistoryLimit': {}
+                          'f:selector': {}
+                          'f:strategy':
+                            'f:rollingUpdate':
+                              .: {}
+                              'f:maxSurge': {}
+                              'f:maxUnavailable': {}
+                            'f:type': {}
+                          'f:template':
+                            'f:metadata':
+                              'f:annotations':
+                                .: {}
+                                'f:garden.io/generated': {}
+                                'f:garden.io/manifest-hash': {}
+                                'f:garden.io/version': {}
+                              'f:labels':
+                                .: {}
+                                'f:module': {}
+                                'f:service': {}
+                            'f:spec':
+                              'f:containers':
+                                'k:{"name":"default-backend"}':
+                                  .: {}
+                                  'f:env':
+                                    .: {}
+                                    'k:{"name":"GARDEN_MODULE_VERSION"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:value': {}
+                                    'k:{"name":"GARDEN_VERSION"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:value': {}
+                                    'k:{"name":"POD_HOST_IP"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_IP"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_NAME"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_NAMESPACE"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_NODE_NAME"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_SERVICE_ACCOUNT"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                    'k:{"name":"POD_UID"}':
+                                      .: {}
+                                      'f:name': {}
+                                      'f:valueFrom':
+                                        .: {}
+                                        'f:fieldRef': {}
+                                  'f:image': {}
+                                  'f:imagePullPolicy': {}
+                                  'f:name': {}
+                                  'f:ports':
+                                    .: {}
+                                    'k:{"containerPort":80,"protocol":"TCP"}':
+                                      .: {}
+                                      'f:containerPort': {}
+                                      'f:name': {}
+                                      'f:protocol': {}
+                                  'f:resources':
+                                    .: {}
+                                    'f:limits':
+                                      .: {}
+                                      'f:cpu': {}
+                                      'f:memory': {}
+                                    'f:requests':
+                                      .: {}
+                                      'f:cpu': {}
+                                      'f:memory': {}
+                                  'f:securityContext':
+                                    .: {}
+                                    'f:allowPrivilegeEscalation': {}
+                                  'f:terminationMessagePath': {}
+                                  'f:terminationMessagePolicy': {}
+                              'f:dnsPolicy': {}
+                              'f:restartPolicy': {}
+                              'f:schedulerName': {}
+                              'f:securityContext': {}
+                              'f:terminationGracePeriodSeconds': {}
+                    - manager: k3s
+                      operation: Update
+                      apiVersion: apps/v1
+                      time: '2023-02-25T17:15:09Z'
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        'f:metadata':
+                          'f:annotations':
+                            'f:deployment.kubernetes.io/revision': {}
+                        'f:status':
+                          'f:availableReplicas': {}
+                          'f:conditions':
+                            .: {}
+                            'k:{"type":"Available"}':
+                              .: {}
+                              'f:lastTransitionTime': {}
+                              'f:lastUpdateTime': {}
+                              'f:message': {}
+                              'f:reason': {}
+                              'f:status': {}
+                              'f:type': {}
+                            'k:{"type":"Progressing"}':
+                              .: {}
+                              'f:lastTransitionTime': {}
+                              'f:lastUpdateTime': {}
+                              'f:message': {}
+                              'f:reason': {}
+                              'f:status': {}
+                              'f:type': {}
+                          'f:observedGeneration': {}
+                          'f:readyReplicas': {}
+                          'f:replicas': {}
+                          'f:updatedReplicas': {}
+                      subresource: status
+                spec:
+                  replicas: 1
+                  selector:
+                    matchLabels:
+                      service: default-backend
+                  template:
+                    metadata:
+                      creationTimestamp: null
+                      labels:
+                        module: default-backend
+                        service: default-backend
+                      annotations:
+                        garden.io/generated: 'true'
+                        garden.io/manifest-hash: >-
+                          e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5
+                        garden.io/version: v-2d58c28944
+                    spec:
+                      containers:
+                        - name: default-backend
+                          image: 'gardendev/default-backend:v0.1'
+                          ports:
+                            - name: http
+                              containerPort: 80
+                              protocol: TCP
+                          env:
+                            - name: GARDEN_VERSION
+                              value: v-2d58c28944
+                            - name: GARDEN_MODULE_VERSION
+                              value: v-24864f339e
+                            - name: POD_HOST_IP
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: status.hostIP
+                            - name: POD_IP
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: status.podIP
+                            - name: POD_NAME
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: metadata.name
+                            - name: POD_NAMESPACE
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: metadata.namespace
+                            - name: POD_NODE_NAME
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: spec.nodeName
+                            - name: POD_SERVICE_ACCOUNT
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: spec.serviceAccountName
+                            - name: POD_UID
+                              valueFrom:
+                                fieldRef:
+                                  apiVersion: v1
+                                  fieldPath: metadata.uid
+                          resources:
+                            limits:
+                              cpu: '1'
+                              memory: 1Gi
+                            requests:
+                              cpu: 10m
+                              memory: 90Mi
+                          terminationMessagePath: /dev/termination-log
+                          terminationMessagePolicy: File
+                          imagePullPolicy: IfNotPresent
+                          securityContext:
+                            allowPrivilegeEscalation: false
+                      restartPolicy: Always
+                      terminationGracePeriodSeconds: 5
+                      dnsPolicy: ClusterFirst
+                      securityContext: {}
+                      schedulerName: default-scheduler
+                  strategy:
+                    type: RollingUpdate
+                    rollingUpdate:
+                      maxUnavailable: 1
+                      maxSurge: 1
+                  revisionHistoryLimit: 3
+                  progressDeadlineSeconds: 600
+                status:
+                  observedGeneration: 1
+                  replicas: 1
+                  updatedReplicas: 1
+                  readyReplicas: 1
+                  availableReplicas: 1
+                  conditions:
+                    - type: Available
+                      status: 'True'
+                      lastUpdateTime: '2023-02-25T17:15:04Z'
+                      lastTransitionTime: '2023-02-25T17:15:04Z'
+                      reason: MinimumReplicasAvailable
+                      message: Deployment has minimum availability.
+                    - type: Progressing
+                      status: 'True'
+                      lastUpdateTime: '2023-02-25T17:15:09Z'
+                      lastTransitionTime: '2023-02-25T17:15:04Z'
+                      reason: NewReplicaSetAvailable
+                      message: >-
+                        ReplicaSet "default-backend-7d7d4b7b58" has successfully
+                        progressed.
+              - kind: Service
+                apiVersion: v1
+                metadata:
+                  name: default-backend
+                  namespace: garden-system
+                  uid: ea9b7635-4491-49de-9fea-041c64bee19c
+                  resourceVersion: '1088'
+                  creationTimestamp: '2023-02-25T17:15:04Z'
+                  labels:
+                    module: default-backend
+                    service: default-backend
+                  annotations:
+                    garden.io/generated: 'true'
+                    garden.io/manifest-hash: >-
+                      e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5
+                    garden.io/version: v-2d58c28944
+                    kubectl.kubernetes.io/last-applied-configuration: >
+                      {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"},"name":"default-backend","namespace":"garden-system"},"spec":{"ports":[{"name":"http","port":80,"protocol":"TCP","targetPort":80}],"selector":{"service":"default-backend"},"type":"ClusterIP"}}
+                  managedFields:
+                    - manager: kubectl-client-side-apply
+                      operation: Update
+                      apiVersion: v1
+                      time: '2023-02-25T17:15:04Z'
+                      fieldsType: FieldsV1
+                      fieldsV1:
+                        'f:metadata':
+                          'f:annotations':
+                            .: {}
+                            'f:garden.io/generated': {}
+                            'f:garden.io/manifest-hash': {}
+                            'f:garden.io/version': {}
+                            'f:kubectl.kubernetes.io/last-applied-configuration': {}
+                          'f:labels':
+                            .: {}
+                            'f:module': {}
+                            'f:service': {}
+                        'f:spec':
+                          'f:internalTrafficPolicy': {}
+                          'f:ports':
+                            .: {}
+                            'k:{"port":80,"protocol":"TCP"}':
+                              .: {}
+                              'f:name': {}
+                              'f:port': {}
+                              'f:protocol': {}
+                              'f:targetPort': {}
+                          'f:selector': {}
+                          'f:sessionAffinity': {}
+                          'f:type': {}
+                spec:
+                  ports:
+                    - name: http
+                      protocol: TCP
+                      port: 80
+                      targetPort: 80
+                  selector:
+                    service: default-backend
+                  clusterIP: 10.43.113.188
+                  clusterIPs:
+                    - 10.43.113.188
+                  type: ClusterIP
+                  sessionAffinity: None
+                  ipFamilies:
+                    - IPv4
+                  ipFamilyPolicy: SingleStack
+                  internalTrafficPolicy: Cluster
+                status:
+                  loadBalancer: {}
+            workload:
+              kind: Deployment
+              apiVersion: apps/v1
+              metadata:
+                name: default-backend
+                annotations:
+                  garden.io/configured.replicas: '1'
+                  garden.io/generated: 'true'
+                  garden.io/version: v-2d58c28944
+                namespace: garden-system
+                labels:
+                  module: default-backend
+                  service: default-backend
+              spec:
+                selector:
+                  matchLabels:
+                    service: default-backend
+                template:
+                  metadata:
+                    annotations:
+                      garden.io/generated: 'true'
+                      garden.io/version: v-2d58c28944
+                    labels:
+                      module: default-backend
+                      service: default-backend
+                  spec:
+                    containers:
+                      - name: default-backend
+                        image: 'gardendev/default-backend:v0.1'
+                        env:
+                          - name: GARDEN_VERSION
+                            value: v-2d58c28944
+                          - name: GARDEN_MODULE_VERSION
+                            value: v-24864f339e
+                          - name: POD_HOST_IP
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: status.hostIP
+                          - name: POD_IP
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: status.podIP
+                          - name: POD_NAME
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: metadata.name
+                          - name: POD_NAMESPACE
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: metadata.namespace
+                          - name: POD_NODE_NAME
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: spec.nodeName
+                          - name: POD_SERVICE_ACCOUNT
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: spec.serviceAccountName
+                          - name: POD_UID
+                            valueFrom:
+                              fieldRef:
+                                fieldPath: metadata.uid
+                        ports:
+                          - name: http
+                            protocol: TCP
+                            containerPort: 80
+                        resources:
+                          requests:
+                            cpu: 10m
+                            memory: 90Mi
+                          limits:
+                            memory: 1Gi
+                            cpu: '1'
+                        imagePullPolicy: IfNotPresent
+                        securityContext:
+                          allowPrivilegeEscalation: false
+                    restartPolicy: Always
+                    terminationGracePeriodSeconds: 5
+                    dnsPolicy: ClusterFirst
+                replicas: 1
+                strategy:
+                  type: RollingUpdate
+                  rollingUpdate:
+                    maxUnavailable: 1
+                    maxSurge: 1
+                revisionHistoryLimit: 3
+          devMode: false
+          localMode: false
+          outputs: {}
+        dependencyResults: {}
+        version: v-2d58c28944
+        startedAt: '2023-02-25T17:23:38.751Z'
+    version: v-b5ac3ef2a2
+    startedAt: '2023-02-25T17:23:38.876Z'
+  build.ingress-controller:
+    type: build
+    key: build.ingress-controller
+    name: ingress-controller
+    description: building ingress-controller
+    completedAt: '2023-02-25T17:23:41.397Z'
+    batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+    output:
+      fresh: true
+    dependencyResults:
+      stage-build.ingress-controller:
+        type: stage-build
+        key: stage-build.ingress-controller
+        name: ingress-controller
+        description: staging build for ingress-controller
+        completedAt: '2023-02-25T17:23:38.785Z'
+        batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+        output: {}
+        dependencyResults: {}
+        version: v-9f251da908
+        startedAt: '2023-02-25T17:23:38.754Z'
+    version: v-9f251da908
+    startedAt: '2023-02-25T17:23:38.787Z'
+  deploy.ingress-controller:
+    type: deploy
+    description: deploying service 'ingress-controller' (from module 'ingress-controller')
+    key: deploy.ingress-controller
+    name: ingress-controller
+    error: ~error
+    startedAt: '2023-02-25T17:23:41.399Z'
+    completedAt: '2023-02-25T17:28:42.631Z'
+    batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+    version: v-b5ac3ef2a2
+
+
+[2023-02-25T17:28:42.901Z] Done flushing all events and log entries.
+
+[2023-02-25T17:28:42.933Z] Error: Failed resolving one or more providers:
+- local-kubernetes
+    at /snapshot/project/tmp/pkg/cli/node_modules/@garden-io/core/src/garden.ts:611:15
+
+Error Details:
+
+rawConfigs:
+  - name: exec
+  - name: container
+  - name: templated
+  - name: local-kubernetes
+    environments:
+      - default
+    context: k3d-k3s-default
+    dependencies: []
+taskResults:
+  resolve-provider.exec:
+    type: resolve-provider
+    key: resolve-provider.exec
+    name: exec
+    description: resolving provider exec
+    completedAt: '2023-02-25T17:23:36.295Z'
+    batchId: db55c2ca-dd67-46bd-8b2e-351052b83a21
+    output:
+      name: exec
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: exec
+        dependencies: []
+        path: /workspaces/garden/garden/examples/demo-project-start
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.51
+    startedAt: '2023-02-25T17:23:36.246Z'
+  resolve-provider.container:
+    type: resolve-provider
+    key: resolve-provider.container
+    name: container
+    description: resolving provider container
+    completedAt: '2023-02-25T17:23:36.319Z'
+    batchId: 9caacfb8-6bdd-4307-962f-2d6258065e2c
+    output:
+      name: container
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: container
+        dependencies: []
+        path: /workspaces/garden/garden/examples/demo-project-start
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.51
+    startedAt: '2023-02-25T17:23:36.247Z'
+  resolve-provider.local-kubernetes:
+    type: resolve-provider
+    description: resolving provider local-kubernetes
+    key: resolve-provider.local-kubernetes
+    name: local-kubernetes
+    error:
+      detail:
+        error:
+          shortMessage: >-
+            Command failed with exit code 1:
+            /home/node/.garden/tools/helm/f67f27f2837e2821/linux-amd64/helm
+            --kube-context k3d-k3s-default --namespace garden-system install
+            garden-nginx
+            /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx
+            --namespace garden-system --timeout 300s --values
+            /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx/garden-values.yml
+            --atomic
+          command: >-
+            /home/node/.garden/tools/helm/f67f27f2837e2821/linux-amd64/helm
+            --kube-context k3d-k3s-default --namespace garden-system install
+            garden-nginx
+            /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx
+            --namespace garden-system --timeout 300s --values
+            /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx/garden-values.yml
+            --atomic
+          exitCode: 1
+          stdout: ''
+          stderr: >-
+            Error: INSTALLATION FAILED: release garden-nginx failed, and has
+            been uninstalled due to atomic being set: timed out waiting for the
+            condition
+          all: >-
+            Error: INSTALLATION FAILED: release garden-nginx failed, and has
+            been uninstalled due to atomic being set: timed out waiting for the
+            condition
+          failed: true
+          timedOut: false
+          isCanceled: false
+          killed: false
+        results:
+          stage-build.default-backend:
+            type: stage-build
+            key: stage-build.default-backend
+            name: default-backend
+            description: staging build for default-backend
+            completedAt: '2023-02-25T17:23:38.785Z'
+            batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+            output: {}
+            dependencyResults: {}
+            version: v-24864f339e
+            startedAt: '2023-02-25T17:23:38.754Z'
+          stage-build.ingress-controller:
+            type: stage-build
+            key: stage-build.ingress-controller
+            name: ingress-controller
+            description: staging build for ingress-controller
+            completedAt: '2023-02-25T17:23:38.785Z'
+            batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+            output: {}
+            dependencyResults: {}
+            version: v-9f251da908
+            startedAt: '2023-02-25T17:23:38.754Z'
+          build.default-backend:
+            type: build
+            key: build.default-backend
+            name: default-backend
+            description: building default-backend
+            completedAt: '2023-02-25T17:23:38.803Z'
+            batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+            output:
+              fresh: false
+            dependencyResults:
+              stage-build.default-backend: >-
+                ~taskResults~resolve-provider.local-kubernetes~error~detail~results~stage-build.default-backend
+            version: v-24864f339e
+            startedAt: '2023-02-25T17:23:38.786Z'
+          get-service-status.default-backend:
+            type: get-service-status
+            key: get-service-status.default-backend
+            name: default-backend
+            description: >-
+              getting status for service 'default-backend' (from module
+              'default-backend')
+            completedAt: '2023-02-25T17:23:38.871Z'
+            batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+            output:
+              forwardablePorts:
+                - name: http
+                  protocol: TCP
+                  targetPort: 80
+              ingresses: []
+              state: ready
+              namespaceStatuses:
+                - pluginName: local-kubernetes
+                  namespaceName: garden-system
+                  state: ready
+              version: v-2d58c28944
+              detail:
+                remoteResources:
+                  - kind: Deployment
+                    apiVersion: apps/v1
+                    metadata:
+                      name: default-backend
+                      namespace: garden-system
+                      uid: 661181cf-6532-441f-bf03-d86c109f6a14
+                      resourceVersion: '1110'
+                      generation: 1
+                      creationTimestamp: '2023-02-25T17:15:04Z'
+                      labels:
+                        module: default-backend
+                        service: default-backend
+                      annotations:
+                        deployment.kubernetes.io/revision: '1'
+                        garden.io/configured.replicas: '1'
+                        garden.io/generated: 'true'
+                        garden.io/manifest-hash: >-
+                          f1477dfc4a89c46adbd86b74880d94e2fb2cf55da79c61f16f1d4b4dda9b80ca
+                        garden.io/version: v-2d58c28944
+                        kubectl.kubernetes.io/last-applied-configuration: >
+                          {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{"garden.io/configured.replicas":"1","garden.io/generated":"true","garden.io/manifest-hash":"f1477dfc4a89c46adbd86b74880d94e2fb2cf55da79c61f16f1d4b4dda9b80ca","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"},"name":"default-backend","namespace":"garden-system"},"spec":{"replicas":1,"revisionHistoryLimit":3,"selector":{"matchLabels":{"service":"default-backend"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":1},"type":"RollingUpdate"},"template":{"metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"}},"spec":{"containers":[{"env":[{"name":"GARDEN_VERSION","value":"v-2d58c28944"},{"name":"GARDEN_MODULE_VERSION","value":"v-24864f339e"},{"name":"POD_HOST_IP","valueFrom":{"fieldRef":{"fieldPath":"status.hostIP"}}},{"name":"POD_IP","valueFrom":{"fieldRef":{"fieldPath":"status.podIP"}}},{"name":"POD_NAME","valueFrom":{"fieldRef":{"fieldPath":"metadata.name"}}},{"name":"POD_NAMESPACE","valueFrom":{"fieldRef":{"fieldPath":"metadata.namespace"}}},{"name":"POD_NODE_NAME","valueFrom":{"fieldRef":{"fieldPath":"spec.nodeName"}}},{"name":"POD_SERVICE_ACCOUNT","valueFrom":{"fieldRef":{"fieldPath":"spec.serviceAccountName"}}},{"name":"POD_UID","valueFrom":{"fieldRef":{"fieldPath":"metadata.uid"}}}],"image":"gardendev/default-backend:v0.1","imagePullPolicy":"IfNotPresent","name":"default-backend","ports":[{"containerPort":80,"name":"http","protocol":"TCP"}],"resources":{"limits":{"cpu":"1","memory":"1Gi"},"requests":{"cpu":"10m","memory":"90Mi"}},"securityContext":{"allowPrivilegeEscalation":false}}],"dnsPolicy":"ClusterFirst","restartPolicy":"Always","terminationGracePeriodSeconds":5}}}}
+                      managedFields:
+                        - manager: kubectl-client-side-apply
+                          operation: Update
+                          apiVersion: apps/v1
+                          time: '2023-02-25T17:15:04Z'
+                          fieldsType: FieldsV1
+                          fieldsV1:
+                            'f:metadata':
+                              'f:annotations':
+                                .: {}
+                                'f:garden.io/configured.replicas': {}
+                                'f:garden.io/generated': {}
+                                'f:garden.io/manifest-hash': {}
+                                'f:garden.io/version': {}
+                                'f:kubectl.kubernetes.io/last-applied-configuration': {}
+                              'f:labels':
+                                .: {}
+                                'f:module': {}
+                                'f:service': {}
+                            'f:spec':
+                              'f:progressDeadlineSeconds': {}
+                              'f:replicas': {}
+                              'f:revisionHistoryLimit': {}
+                              'f:selector': {}
+                              'f:strategy':
+                                'f:rollingUpdate':
+                                  .: {}
+                                  'f:maxSurge': {}
+                                  'f:maxUnavailable': {}
+                                'f:type': {}
+                              'f:template':
+                                'f:metadata':
+                                  'f:annotations':
+                                    .: {}
+                                    'f:garden.io/generated': {}
+                                    'f:garden.io/manifest-hash': {}
+                                    'f:garden.io/version': {}
+                                  'f:labels':
+                                    .: {}
+                                    'f:module': {}
+                                    'f:service': {}
+                                'f:spec':
+                                  'f:containers':
+                                    'k:{"name":"default-backend"}':
+                                      .: {}
+                                      'f:env':
+                                        .: {}
+                                        'k:{"name":"GARDEN_MODULE_VERSION"}':
+                                          .: {}
+                                          'f:name': {}
+                                          'f:value': {}
+                                        'k:{"name":"GARDEN_VERSION"}':
+                                          .: {}
+                                          'f:name': {}
+                                          'f:value': {}
+                                        'k:{"name":"POD_HOST_IP"}':
+                                          .: {}
+                                          'f:name': {}
+                                          'f:valueFrom':
+                                            .: {}
+                                            'f:fieldRef': {}
+                                        'k:{"name":"POD_IP"}':
+                                          .: {}
+                                          'f:name': {}
+                                          'f:valueFrom':
+                                            .: {}
+                                            'f:fieldRef': {}
+                                        'k:{"name":"POD_NAME"}':
+                                          .: {}
+                                          'f:name': {}
+                                          'f:valueFrom':
+                                            .: {}
+                                            'f:fieldRef': {}
+                                        'k:{"name":"POD_NAMESPACE"}':
+                                          .: {}
+                                          'f:name': {}
+                                          'f:valueFrom':
+                                            .: {}
+                                            'f:fieldRef': {}
+                                        'k:{"name":"POD_NODE_NAME"}':
+                                          .: {}
+                                          'f:name': {}
+                                          'f:valueFrom':
+                                            .: {}
+                                            'f:fieldRef': {}
+                                        'k:{"name":"POD_SERVICE_ACCOUNT"}':
+                                          .: {}
+                                          'f:name': {}
+                                          'f:valueFrom':
+                                            .: {}
+                                            'f:fieldRef': {}
+                                        'k:{"name":"POD_UID"}':
+                                          .: {}
+                                          'f:name': {}
+                                          'f:valueFrom':
+                                            .: {}
+                                            'f:fieldRef': {}
+                                      'f:image': {}
+                                      'f:imagePullPolicy': {}
+                                      'f:name': {}
+                                      'f:ports':
+                                        .: {}
+                                        'k:{"containerPort":80,"protocol":"TCP"}':
+                                          .: {}
+                                          'f:containerPort': {}
+                                          'f:name': {}
+                                          'f:protocol': {}
+                                      'f:resources':
+                                        .: {}
+                                        'f:limits':
+                                          .: {}
+                                          'f:cpu': {}
+                                          'f:memory': {}
+                                        'f:requests':
+                                          .: {}
+                                          'f:cpu': {}
+                                          'f:memory': {}
+                                      'f:securityContext':
+                                        .: {}
+                                        'f:allowPrivilegeEscalation': {}
+                                      'f:terminationMessagePath': {}
+                                      'f:terminationMessagePolicy': {}
+                                  'f:dnsPolicy': {}
+                                  'f:restartPolicy': {}
+                                  'f:schedulerName': {}
+                                  'f:securityContext': {}
+                                  'f:terminationGracePeriodSeconds': {}
+                        - manager: k3s
+                          operation: Update
+                          apiVersion: apps/v1
+                          time: '2023-02-25T17:15:09Z'
+                          fieldsType: FieldsV1
+                          fieldsV1:
+                            'f:metadata':
+                              'f:annotations':
+                                'f:deployment.kubernetes.io/revision': {}
+                            'f:status':
+                              'f:availableReplicas': {}
+                              'f:conditions':
+                                .: {}
+                                'k:{"type":"Available"}':
+                                  .: {}
+                                  'f:lastTransitionTime': {}
+                                  'f:lastUpdateTime': {}
+                                  'f:message': {}
+                                  'f:reason': {}
+                                  'f:status': {}
+                                  'f:type': {}
+                                'k:{"type":"Progressing"}':
+                                  .: {}
+                                  'f:lastTransitionTime': {}
+                                  'f:lastUpdateTime': {}
+                                  'f:message': {}
+                                  'f:reason': {}
+                                  'f:status': {}
+                                  'f:type': {}
+                              'f:observedGeneration': {}
+                              'f:readyReplicas': {}
+                              'f:replicas': {}
+                              'f:updatedReplicas': {}
+                          subresource: status
+                    spec:
+                      replicas: 1
+                      selector:
+                        matchLabels:
+                          service: default-backend
+                      template:
+                        metadata:
+                          creationTimestamp: null
+                          labels:
+                            module: default-backend
+                            service: default-backend
+                          annotations:
+                            garden.io/generated: 'true'
+                            garden.io/manifest-hash: >-
+                              e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5
+                            garden.io/version: v-2d58c28944
+                        spec:
+                          containers:
+                            - name: default-backend
+                              image: 'gardendev/default-backend:v0.1'
+                              ports:
+                                - name: http
+                                  containerPort: 80
+                                  protocol: TCP
+                              env:
+                                - name: GARDEN_VERSION
+                                  value: v-2d58c28944
+                                - name: GARDEN_MODULE_VERSION
+                                  value: v-24864f339e
+                                - name: POD_HOST_IP
+                                  valueFrom:
+                                    fieldRef:
+                                      apiVersion: v1
+                                      fieldPath: status.hostIP
+                                - name: POD_IP
+                                  valueFrom:
+                                    fieldRef:
+                                      apiVersion: v1
+                                      fieldPath: status.podIP
+                                - name: POD_NAME
+                                  valueFrom:
+                                    fieldRef:
+                                      apiVersion: v1
+                                      fieldPath: metadata.name
+                                - name: POD_NAMESPACE
+                                  valueFrom:
+                                    fieldRef:
+                                      apiVersion: v1
+                                      fieldPath: metadata.namespace
+                                - name: POD_NODE_NAME
+                                  valueFrom:
+                                    fieldRef:
+                                      apiVersion: v1
+                                      fieldPath: spec.nodeName
+                                - name: POD_SERVICE_ACCOUNT
+                                  valueFrom:
+                                    fieldRef:
+                                      apiVersion: v1
+                                      fieldPath: spec.serviceAccountName
+                                - name: POD_UID
+                                  valueFrom:
+                                    fieldRef:
+                                      apiVersion: v1
+                                      fieldPath: metadata.uid
+                              resources:
+                                limits:
+                                  cpu: '1'
+                                  memory: 1Gi
+                                requests:
+                                  cpu: 10m
+                                  memory: 90Mi
+                              terminationMessagePath: /dev/termination-log
+                              terminationMessagePolicy: File
+                              imagePullPolicy: IfNotPresent
+                              securityContext:
+                                allowPrivilegeEscalation: false
+                          restartPolicy: Always
+                          terminationGracePeriodSeconds: 5
+                          dnsPolicy: ClusterFirst
+                          securityContext: {}
+                          schedulerName: default-scheduler
+                      strategy:
+                        type: RollingUpdate
+                        rollingUpdate:
+                          maxUnavailable: 1
+                          maxSurge: 1
+                      revisionHistoryLimit: 3
+                      progressDeadlineSeconds: 600
+                    status:
+                      observedGeneration: 1
+                      replicas: 1
+                      updatedReplicas: 1
+                      readyReplicas: 1
+                      availableReplicas: 1
+                      conditions:
+                        - type: Available
+                          status: 'True'
+                          lastUpdateTime: '2023-02-25T17:15:04Z'
+                          lastTransitionTime: '2023-02-25T17:15:04Z'
+                          reason: MinimumReplicasAvailable
+                          message: Deployment has minimum availability.
+                        - type: Progressing
+                          status: 'True'
+                          lastUpdateTime: '2023-02-25T17:15:09Z'
+                          lastTransitionTime: '2023-02-25T17:15:04Z'
+                          reason: NewReplicaSetAvailable
+                          message: >-
+                            ReplicaSet "default-backend-7d7d4b7b58" has
+                            successfully progressed.
+                  - kind: Service
+                    apiVersion: v1
+                    metadata:
+                      name: default-backend
+                      namespace: garden-system
+                      uid: ea9b7635-4491-49de-9fea-041c64bee19c
+                      resourceVersion: '1088'
+                      creationTimestamp: '2023-02-25T17:15:04Z'
+                      labels:
+                        module: default-backend
+                        service: default-backend
+                      annotations:
+                        garden.io/generated: 'true'
+                        garden.io/manifest-hash: >-
+                          e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5
+                        garden.io/version: v-2d58c28944
+                        kubectl.kubernetes.io/last-applied-configuration: >
+                          {"apiVersion":"v1","kind":"Service","metadata":{"annotations":{"garden.io/generated":"true","garden.io/manifest-hash":"e14e60d4361d65242c498b88ed26ce481592d6535d5c8102d20fef3f2ac0f0d5","garden.io/version":"v-2d58c28944"},"labels":{"module":"default-backend","service":"default-backend"},"name":"default-backend","namespace":"garden-system"},"spec":{"ports":[{"name":"http","port":80,"protocol":"TCP","targetPort":80}],"selector":{"service":"default-backend"},"type":"ClusterIP"}}
+                      managedFields:
+                        - manager: kubectl-client-side-apply
+                          operation: Update
+                          apiVersion: v1
+                          time: '2023-02-25T17:15:04Z'
+                          fieldsType: FieldsV1
+                          fieldsV1:
+                            'f:metadata':
+                              'f:annotations':
+                                .: {}
+                                'f:garden.io/generated': {}
+                                'f:garden.io/manifest-hash': {}
+                                'f:garden.io/version': {}
+                                'f:kubectl.kubernetes.io/last-applied-configuration': {}
+                              'f:labels':
+                                .: {}
+                                'f:module': {}
+                                'f:service': {}
+                            'f:spec':
+                              'f:internalTrafficPolicy': {}
+                              'f:ports':
+                                .: {}
+                                'k:{"port":80,"protocol":"TCP"}':
+                                  .: {}
+                                  'f:name': {}
+                                  'f:port': {}
+                                  'f:protocol': {}
+                                  'f:targetPort': {}
+                              'f:selector': {}
+                              'f:sessionAffinity': {}
+                              'f:type': {}
+                    spec:
+                      ports:
+                        - name: http
+                          protocol: TCP
+                          port: 80
+                          targetPort: 80
+                      selector:
+                        service: default-backend
+                      clusterIP: 10.43.113.188
+                      clusterIPs:
+                        - 10.43.113.188
+                      type: ClusterIP
+                      sessionAffinity: None
+                      ipFamilies:
+                        - IPv4
+                      ipFamilyPolicy: SingleStack
+                      internalTrafficPolicy: Cluster
+                    status:
+                      loadBalancer: {}
+                workload:
+                  kind: Deployment
+                  apiVersion: apps/v1
+                  metadata:
+                    name: default-backend
+                    annotations:
+                      garden.io/configured.replicas: '1'
+                      garden.io/generated: 'true'
+                      garden.io/version: v-2d58c28944
+                    namespace: garden-system
+                    labels:
+                      module: default-backend
+                      service: default-backend
+                  spec:
+                    selector:
+                      matchLabels:
+                        service: default-backend
+                    template:
+                      metadata:
+                        annotations:
+                          garden.io/generated: 'true'
+                          garden.io/version: v-2d58c28944
+                        labels: >-
+                          ~taskResults~resolve-provider.local-kubernetes~error~detail~results~get-service-status.default-backend~output~detail~workload~metadata~labels
+                      spec:
+                        containers:
+                          - name: default-backend
+                            image: 'gardendev/default-backend:v0.1'
+                            env:
+                              - name: GARDEN_VERSION
+                                value: v-2d58c28944
+                              - name: GARDEN_MODULE_VERSION
+                                value: v-24864f339e
+                              - name: POD_HOST_IP
+                                valueFrom:
+                                  fieldRef:
+                                    fieldPath: status.hostIP
+                              - name: POD_IP
+                                valueFrom:
+                                  fieldRef:
+                                    fieldPath: status.podIP
+                              - name: POD_NAME
+                                valueFrom:
+                                  fieldRef:
+                                    fieldPath: metadata.name
+                              - name: POD_NAMESPACE
+                                valueFrom:
+                                  fieldRef:
+                                    fieldPath: metadata.namespace
+                              - name: POD_NODE_NAME
+                                valueFrom:
+                                  fieldRef:
+                                    fieldPath: spec.nodeName
+                              - name: POD_SERVICE_ACCOUNT
+                                valueFrom:
+                                  fieldRef:
+                                    fieldPath: spec.serviceAccountName
+                              - name: POD_UID
+                                valueFrom:
+                                  fieldRef:
+                                    fieldPath: metadata.uid
+                            ports:
+                              - name: http
+                                protocol: TCP
+                                containerPort: 80
+                            resources:
+                              requests:
+                                cpu: 10m
+                                memory: 90Mi
+                              limits:
+                                memory: 1Gi
+                                cpu: '1'
+                            imagePullPolicy: IfNotPresent
+                            securityContext:
+                              allowPrivilegeEscalation: false
+                        restartPolicy: Always
+                        terminationGracePeriodSeconds: 5
+                        dnsPolicy: ClusterFirst
+                    replicas: 1
+                    strategy:
+                      type: RollingUpdate
+                      rollingUpdate:
+                        maxUnavailable: 1
+                        maxSurge: 1
+                    revisionHistoryLimit: 3
+              devMode: false
+              localMode: false
+              outputs: {}
+            dependencyResults: {}
+            version: v-2d58c28944
+            startedAt: '2023-02-25T17:23:38.751Z'
+          deploy.default-backend:
+            type: deploy
+            key: deploy.default-backend
+            name: default-backend
+            description: >-
+              deploying service 'default-backend' (from module
+              'default-backend')
+            completedAt: '2023-02-25T17:23:38.889Z'
+            batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+            output: >-
+              ~taskResults~resolve-provider.local-kubernetes~error~detail~results~get-service-status.default-backend~output
+            dependencyResults:
+              get-service-status.default-backend: >-
+                ~taskResults~resolve-provider.local-kubernetes~error~detail~results~get-service-status.default-backend
+              build.default-backend: >-
+                ~taskResults~resolve-provider.local-kubernetes~error~detail~results~build.default-backend
+            version: v-2d58c28944
+            startedAt: '2023-02-25T17:23:38.879Z'
+          get-service-status.ingress-controller:
+            type: get-service-status
+            key: get-service-status.ingress-controller
+            name: ingress-controller
+            description: >-
+              getting status for service 'ingress-controller' (from module
+              'ingress-controller')
+            completedAt: '2023-02-25T17:23:38.992Z'
+            batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+            output:
+              forwardablePorts: []
+              state: missing
+              detail: {}
+              namespaceStatuses:
+                - pluginName: local-kubernetes
+                  namespaceName: garden-system
+                  state: ready
+              ingresses: []
+              outputs: {}
+            dependencyResults:
+              get-service-status.default-backend: >-
+                ~taskResults~resolve-provider.local-kubernetes~error~detail~results~get-service-status.default-backend
+            version: v-b5ac3ef2a2
+            startedAt: '2023-02-25T17:23:38.876Z'
+          build.ingress-controller:
+            type: build
+            key: build.ingress-controller
+            name: ingress-controller
+            description: building ingress-controller
+            completedAt: '2023-02-25T17:23:41.397Z'
+            batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+            output:
+              fresh: true
+            dependencyResults:
+              stage-build.ingress-controller: >-
+                ~taskResults~resolve-provider.local-kubernetes~error~detail~results~stage-build.ingress-controller
+            version: v-9f251da908
+            startedAt: '2023-02-25T17:23:38.787Z'
+          deploy.ingress-controller:
+            type: deploy
+            description: >-
+              deploying service 'ingress-controller' (from module
+              'ingress-controller')
+            key: deploy.ingress-controller
+            name: ingress-controller
+            error: ~taskResults~resolve-provider.local-kubernetes~error~detail~error
+            startedAt: '2023-02-25T17:23:41.399Z'
+            completedAt: '2023-02-25T17:28:42.631Z'
+            batchId: 8d4396e3-374a-4775-88d2-d8b2291eddd8
+            version: v-b5ac3ef2a2
+      type: plugin
+    startedAt: '2023-02-25T17:23:36.320Z'
+    completedAt: '2023-02-25T17:28:42.731Z'
+    batchId: 9caacfb8-6bdd-4307-962f-2d6258065e2c
+    version: 0.12.51
+  resolve-provider.templated:
+    type: resolve-provider
+    key: resolve-provider.templated
+    name: templated
+    description: resolving provider templated
+    completedAt: '2023-02-25T17:23:36.318Z'
+    batchId: 24bde6c5-3468-432c-ab8c-37f543a7feaf
+    output:
+      name: templated
+      dependencies: {}
+      moduleConfigs: []
+      config:
+        name: templated
+        path: /workspaces/garden/garden/examples/demo-project-start
+      status:
+        ready: true
+        outputs: {}
+        cached: true
+      dashboardPages: []
+    dependencyResults: {}
+    version: 0.12.51
+    startedAt: '2023-02-25T17:23:36.248Z'
+messages:
+  - >-
+    - local-kubernetes: local-kubernetes — an error occurred when configuring
+    environment:
+
+    Error: Command
+    "/home/node/.garden/tools/helm/f67f27f2837e2821/linux-amd64/helm
+    --kube-context k3d-k3s-default --namespace garden-system install
+    garden-nginx
+    /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx
+    --namespace garden-system --timeout 300s --values
+    /workspaces/garden/garden/examples/demo-project-start/.garden/kubernetes.garden/build/ingress-controller/ingress-nginx/garden-values.yml
+    --atomic" failed with code 1:
+
+
+    Error: INSTALLATION FAILED: release garden-nginx failed, and has been
+    uninstalled due to atomic being set: timed out waiting for the condition
+
+
+    Error: INSTALLATION FAILED: release garden-nginx failed, and has been
+    uninstalled due to atomic being set: timed out waiting for the condition
+
+
+[2023-02-25T17:28:42.995Z] 
+See .garden/error.log for detailed error message
+
+[2023-02-25T17:28:43.100Z] Preparing environment...

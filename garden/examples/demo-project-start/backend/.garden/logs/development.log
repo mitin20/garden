@@ -1,0 +1,9 @@
+
+[2023-02-25T17:06:14.866Z] -> Created new module config in garden.yml
+
+[2023-02-25T17:06:14.978Z] We recommend reviewing the generated config, uncommenting fields that you'd like to configure, and cleaning up any
+commented fields that you don't need to use.
+
+For more information about container modules, please check out https://docs.garden.io/reference/module-types/container,
+and the container provider docs at https://docs.garden.io/reference/providers/container. For general information about
+Garden configuration files, take a look at https://docs.garden.io/using-garden/configuration-overview.

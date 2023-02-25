@@ -1,0 +1,12 @@
+kind: Module
+type: container
+name: backend
+services:
+  - name: backend
+    ports:
+      - name: http
+        containerPort: 8080
+        servicePort: 80
+    ingresses:
+      - path: /hello-backend
+        port: http
