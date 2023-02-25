@@ -24,7 +24,7 @@
 
     // Ensure Codespaces meets requirements
 	"hostRequirements": {
-		"cpus": 4
+		"cpus": 2
 	},
 
     "remoteEnv": {
