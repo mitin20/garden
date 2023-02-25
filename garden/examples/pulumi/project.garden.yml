@@ -1,5 +1,0 @@
-kind: Project
-name: pulumi
-providers:
-  - name: pulumi
-    orgName: gordon-garden-bot # <--- replace with your own org

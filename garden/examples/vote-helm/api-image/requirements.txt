@@ -1,5 +1,0 @@
-Flask
-Redis
-gunicorn
-flask-cors
-requests

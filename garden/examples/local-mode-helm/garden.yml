@@ -1,9 +1,0 @@
-kind: Project
-name: local-mode-helm
-environments:
-  - name: local
-    variables:
-      baseHostname: vote.local.app.garden
-providers:
-  - name: local-kubernetes
-    defaultHostname: ${var.baseHostname}

@@ -1,3 +1,0 @@
-config:
-  'kubernetes:context': docker-desktop
-  'pulumi-k8s:namespace': pulumi-k8s
