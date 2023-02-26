@@ -1,0 +1,18 @@
+kind: Module
+type: container
+name: silly-demo
+services:
+- name: backend
+  replicas: ${var.replicas}
+  ports:
+  - name: http
+    containerPort: 8080
+    servicePort: 8080
+  ingresses:
+  - path: /
+    port: http
+    hostname: ${var.hostname}
+  healthCheck:  
+    httpGet:
+      path: /
+      port: http

@@ -1,0 +1,14 @@
+kind: Module
+type: kubernetes
+name: silly-demo
+manifests:
+- apiVersion: apps/v1
+  kind: Deployment
+  metadata:
+    name: silly-demo
+files:
+# - k8s/
+# - k8s/*.yaml
+- k8s/deployment.yaml
+- k8s/ing.yaml
+- k8s/service.yaml

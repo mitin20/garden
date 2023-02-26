@@ -1,0 +1,8 @@
+kind: Workflow
+name: my-workflow
+steps:
+- script: |
+    echo "Starting deployment of the project ${project.name}..."
+- command: [deploy]
+- script: |
+    echo "Finished deployment"
